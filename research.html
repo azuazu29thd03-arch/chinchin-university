@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>研究活動｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 校章＋大学名 */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #12345b;
+}
+
+.news-title a {
+    color: #12345b;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    text-decoration: underline;
+}
+
+.research-card {
+    background: #eef3f8;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid #12345b;
+}
+
+.research-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4d7d;
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <!-- 校章 -->
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="emblem"
+            >
+
+            <!-- 大学名 -->
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            研究活動
+        </h1>
+
+        <p>
+            RESEARCH
+        </p>
+
+    </div>
+
+
+
+    <!-- 研究概要 -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学の研究活動
+        </h2>
+
+        <p>
+            朕珍大学では、既存の学問領域にとらわれない
+            独創的な研究を推進しています。
+        </p>
+
+        <p>
+            工学・医学・建築・文学の各分野が
+            互いに連携することで、
+            新たな知の可能性を追求しています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 最新ニュース -->
+
+    <section class="section">
+
+        <h2>
+            最新の研究ニュース
+        </h2>
+
+
+        <div class="news-item">
+
+            <div class="news-date">
+                2026.08.12　NEW
+            </div>
+
+            <div class="news-title">
+
+                穴流インフォメーションテクノロジー研究室、
+                最新のAI技術を発表
+
+            </div>
+
+        </div>
+
+
+        <div class="news-item">
+
+            <div class="news-date">
+                2026.08.05
+            </div>
+
+            <div class="news-title">
+
+                星川教授、
+                医学とジャングル冒険を融合した新たな研究を開始
+
+            </div>
+
+        </div>
+
+
+        <div class="news-item">
+
+            <div class="news-date">
+                2026.07.28
+            </div>
+
+            <div class="news-title">
+
+                土井教授、
+                2段建築に関する研究成果を発表
+
+            </div>
+
+        </div>
+
+
+        <div class="news-item">
+
+            <div class="news-date">
+                2026.07.20
+            </div>
+
+            <div class="news-title">
+
+                文学部、
+                文学を通じた天国・地獄体験に関する研究を開始
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 注目研究 -->
+
+    <section class="section">
+
+        <h2>
+            注目の研究
+        </h2>
+
+
+        <div class="research-card">
+
+            <h3>
+                穴流インフォメーションテクノロジー研究室
+            </h3>
+
+            <p>
+                AI・音声情報処理・情報セキュリティなどを
+                専門とする研究室です。
+            </p>
+
+            <a
+                href="anal-information.html"
+                class="button"
+            >
+                研究室を見る
+            </a>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                医学部研究プロジェクト
+            </h3>
+
+            <p>
+                医学の可能性を追求し、
+                人々の健康と未来について研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                建築学部研究プロジェクト
+            </h3>
+
+            <p>
+                新しい建築・都市・空間のあり方について
+                研究を行っています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                文学部研究プロジェクト
+            </h3>
+
+            <p>
+                文学作品を通じて、
+                人間の経験と感情について研究しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究プロジェクト -->
+
+    <section class="section">
+
+        <h2>
+            主な研究プロジェクト
+        </h2>
+
+
+        <div class="project">
+
+            <h3>
+                穴流AIプロジェクト
+            </h3>
+
+            <p>
+                AIによる情報解析と
+                穴流インフォメーションテクノロジーの融合を目指します。
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                ジャングル医学研究プロジェクト
+            </h3>
+
+            <p>
+                医学的知見を活用し、
+                未知の環境における人間の健康について研究します。
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                次世代2段建築プロジェクト
+            </h3>
+
+            <p>
+                限られた空間を有効活用するための
+                新たな建築方式について研究します。
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                天国と地獄の文学的研究
+            </h3>
+
+            <p>
+                文学作品を通じて、
+                人間が経験する様々な世界を間接的に探究します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

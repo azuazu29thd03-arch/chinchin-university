@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>入試情報｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faculty-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #fafbfc;
+}
+
+.faculty-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.admission-card {
+    background: #eef3f8;
+    border-left: 5px solid #12345b;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.admission-card:last-child {
+    margin-bottom: 0;
+}
+
+.admission-card h3 {
+    color: #12345b;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.admission-card p {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: #fff8df;
+    border: 1px solid #e5d38a;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.highlight h3 {
+    margin-top: 0;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 180px;
+    background: #eef1f4;
+}
+
+.notice {
+    background: #f1f3f5;
+    border-left: 5px solid #555;
+    padding: 25px;
+    line-height: 2;
+}
+
+.message {
+    background: #eef3f8;
+    padding: 30px;
+    line-height: 2;
+}
+
+.application-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.application-button:hover {
+    background: #1d4d7d;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .info-table th {
+        width: 120px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-area">
+
+                <img
+                    src="校章.jpg"
+                    alt="朕珍大学 校章"
+                    class="logo-image"
+                >
+
+                <div class="logo">
+
+                    朕珍大学
+
+                    <span>
+                        Chinchin University
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            入試情報
+        </h1>
+
+        <p>
+            ADMISSIONS
+        </p>
+
+    </div>
+
+
+
+    <!-- 入試について -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学の入学者選抜について
+        </h2>
+
+        <p>
+            朕珍大学では、学力だけではなく、
+            学習意欲・個性・専門分野への関心などを
+            多面的に評価する入学者選抜を実施しています。
+        </p>
+
+        <p>
+            本学で学びたいという強い意志を持ち、
+            自ら考え、未来を切り拓こうとする学生を
+            広く受け入れています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 募集学部 -->
+
+    <section class="section">
+
+        <h2>
+            募集学部
+        </h2>
+
+
+        <div class="faculty-grid">
+
+
+            <div class="faculty-card">
+
+                <h3>
+                    工学部
+                </h3>
+
+                <p>
+                    情報・工学・科学技術について学び、
+                    社会の発展に貢献する人材を育成します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <h3>
+                    医学部
+                </h3>
+
+                <p>
+                    医学・生命科学について学び、
+                    人々の健康を支える人材を育成します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <h3>
+                    建築学部
+                </h3>
+
+                <p>
+                    建築・都市・空間について学び、
+                    新しい生活環境を創造します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <h3>
+                    文学部
+                </h3>
+
+                <p>
+                    文学・言語・文化を通じて、
+                    人間と社会について探究します。
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 選抜方式 -->
+
+    <section class="section">
+
+        <h2>
+            入学者選抜方式
+        </h2>
+
+
+        <div class="admission-card">
+
+            <h3>
+                一般選抜
+            </h3>
+
+            <p>
+                学力試験を中心として、
+                各学部で必要とされる知識・技能を評価します。
+            </p>
+
+            <p>
+                <strong>
+                    主な評価項目：
+                </strong>
+                学力試験・調査書・面接
+            </p>
+
+        </div>
+
+
+
+        <div class="admission-card">
+
+            <h3>
+                学校推薦型選抜
+            </h3>
+
+            <p>
+                高等学校からの推薦をもとに、
+                学習意欲や人物面などを総合的に評価します。
+            </p>
+
+            <p>
+                <strong>
+                    主な評価項目：
+                </strong>
+                調査書・推薦書・面接・小論文
+            </p>
+
+        </div>
+
+
+
+        <div class="admission-card">
+
+            <h3>
+                総合型選抜
+            </h3>
+
+            <p>
+                志望理由や活動実績、面接などを通じて、
+                本学で学ぶ目的や適性を総合的に評価します。
+            </p>
+
+            <p>
+                <strong>
+                    主な評価項目：
+                </strong>
+                志望理由書・面接・活動報告
+            </p>
+
+        </div>
+
+
+
+        <div class="admission-card">
+
+            <h3>
+                穴流特別選抜
+            </h3>
+
+            <p>
+                穴流インフォメーションテクノロジー研究室に
+                強い関心を持つ受験生を対象とした
+                特別選抜です。本学から選ばれたごく少数の人のみが対象です。
+            </p>
+
+            <p>
+                情報技術に関する知識だけではなく、
+                未知の穴に遭遇した際の対応力を評価します。
+            </p>
+
+
+            <div class="highlight">
+
+                <h3>
+                    穴流特別選抜・最重要事項
+                </h3>
+
+                <p>
+                    「穴とは何か」という問いに対して、
+                    自分自身の考えを述べてください。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 出願資格 -->
+
+    <section class="section">
+
+        <h2>
+            出願資格
+        </h2>
+
+        <ul>
+
+            <li>
+                高等学校または中等教育学校を卒業した者
+            </li>
+
+            <li>
+                通常の課程による12年の学校教育を修了した者
+            </li>
+
+            <li>
+                本学において高等学校卒業と同等以上の学力があると認めた者
+            </li>
+
+            <li>
+                朕珍大学に選ばれた者
+            </li>
+
+        </ul>
+
+
+        <div class="highlight">
+
+            <h3>
+                本学独自の確認事項
+            </h3>
+
+            <p>
+                本学の理念・教育方針を理解し、
+                4年間の大学生活を最後までやり遂げる
+                意志があること。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 試験科目 -->
+
+    <section class="section">
+
+        <h2>
+            試験科目
+        </h2>
+
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    工学部
+                </th>
+
+                <td>
+                    数学・理科・英語・情報
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    医学部
+                </th>
+
+                <td>
+                    数学・理科・英語・医学基礎
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    建築学部
+                </th>
+
+                <td>
+                    数学・英語・建築基礎・空間構成
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    文学部
+                </th>
+
+                <td>
+                    国語・英語・文学・小論文
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 入試日程 -->
+
+    <section class="section">
+
+        <h2>
+            2027年度 入試日程
+        </h2>
+
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    出願受付
+                </th>
+
+                <td>
+                    2026年12月1日 ～ 2027年1月15日
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    一般選抜
+                </th>
+
+                <td>
+                    2027年2月10日
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    学校推薦型選抜
+                </th>
+
+                <td>
+                    2026年11月15日
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    総合型選抜
+                </th>
+
+                <td>
+                    2026年10月25日
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    合格発表
+                </th>
+
+                <td>
+                    各選抜試験終了後に発表（城とドラゴン個人チャットにて）
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 入学料 -->
+
+    <section class="section">
+
+        <h2>
+            入学料・授業料
+        </h2>
+
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    入学料
+                </th>
+
+                <td>
+                    2,000円
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    授業料（年額）
+                </th>
+
+                <td>
+                    535,800円
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    穴流研究費
+                </th>
+
+                <td>
+                    12,000円
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 注意事項 -->
+
+    <section class="section">
+
+        <h2>
+            受験上の注意
+        </h2>
+
+
+        <div class="notice">
+
+            <p>
+                試験当日は時間に余裕を持って来場してください。
+            </p>
+
+            <p>
+                筆記用具・受験票など、
+                必要なものを忘れないよう注意してください。
+            </p>
+
+            <p>
+                また、試験会場内では他の受験生の迷惑となる
+                行為を行わないでください。
+            </p>
+
+            <p>
+                本学の教職員の指示には
+                必ず従ってください。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 受験生へのメッセージ -->
+
+    <section class="section">
+
+        <h2>
+            受験生へのメッセージ
+        </h2>
+
+
+        <div class="message">
+
+            <p>
+                受験とは、単に合格するためだけのものではありません。
+            </p>
+
+            <p>
+                自分が何を学びたいのか、
+                どのような未来を目指しているのかを
+                考える大切な機会です。
+            </p>
+
+            <p>
+                朕珍大学で学びたいという気持ちがあるなら、
+                ぜひその思いを試験（朕珍）で表現してください。
+            </p>
+
+            <p>
+                皆さんの挑戦を、
+                教職員一同心よりお待ちしています。
+            </p>
+
+            <p style="text-align:right;">
+
+                朕珍大学 入試センター
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 忠告 -->
+
+    <section class="section">
+
+        <h2>
+            本学からの重要なお知らせ
+        </h2>
+
+
+        <div class="highlight">
+
+            <p style="
+                text-align:center;
+                font-weight:bold;
+                font-size:20px;
+            ">
+
+                本学を馬鹿にした受験生は、禁固刑です。
+                受験前に一度よく考えてください。
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>大学案内｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+
+/* ナビゲーション */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+
+/* ページタイトル */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+
+/* セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+
+/* 大学概要 */
+
+.overview-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.overview-table {
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.overview-table th,
+.overview-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.overview-table th {
+    width: 180px;
+    background: #f1f3f5;
+}
+
+.university-photo {
+    width: 42%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* 建学の精神 */
+
+.mission {
+    text-align: center;
+    padding: 30px;
+    background: #eef3f8;
+    margin-top: 20px;
+}
+
+.mission-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #12345b;
+    letter-spacing: 4px;
+}
+
+
+/* 沿革 */
+
+.history {
+    border-left: 3px solid #12345b;
+    padding-left: 25px;
+}
+
+.history-item {
+    margin-bottom: 25px;
+}
+
+.history-year {
+    font-weight: bold;
+    color: #12345b;
+    font-size: 18px;
+}
+
+
+/* 学部 */
+
+.faculties {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.faculty {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.faculty h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .faculties {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .university-photo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            朕珍大学
+
+            <span>
+                Chinchin University
+            </span>
+
+        </a>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            大学案内
+        </h1>
+
+        <p>
+            ABOUT CHINCHIN UNIVERSITY
+        </p>
+
+    </div>
+
+
+    <!-- 大学概要 -->
+
+    <section class="section">
+
+        <h2>
+            大学概要
+        </h2>
+
+
+        <div class="overview-content">
+
+            <table class="overview-table">
+
+                <tr>
+                    <th>大学名</th>
+                    <td>朕珍大学</td>
+                </tr>
+
+                <tr>
+                    <th>英語名称</th>
+                    <td>Chinchin University</td>
+                </tr>
+
+                <tr>
+                    <th>設置区分</th>
+                    <td>総合大学</td>
+                </tr>
+
+                <tr>
+                    <th>学部数</th>
+                    <td>4学部</td>
+                </tr>
+
+                <tr>
+                    <th>所在地</th>
+                    <td>奈良県吉野郡十津川村竹筒</td>
+                </tr>
+
+                <tr>
+                    <th>学生数</th>
+                    <td>約3,000名</td>
+                </tr>
+
+            </table>
+
+
+            <img
+                src="全体像.jpg"
+                alt="朕珍大学 全体像"
+                class="university-photo"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- 建学の精神 -->
+
+    <section class="section">
+
+        <h2>
+            建学の精神
+        </h2>
+
+        <p>
+            朕珍大学は、既存の価値観にとらわれることなく、
+            未知なる領域へ挑戦する精神を重視しています。
+        </p>
+
+        <p>
+            学問の可能性は無限です。
+            学生一人ひとりが自ら考え、
+            学び、挑戦し、
+            自分自身の未来を切り拓くことを
+            本学は何よりも大切にしています。
+        </p>
+
+
+        <div class="mission">
+
+            <div class="mission-title">
+                知を極め、未来を創る。
+            </div>
+
+            <p>
+                自ら考え、学び、挑戦し、
+                未来を切り拓く人材を育成します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 学長挨拶 -->
+
+    <section class="section">
+
+        <h2>
+            学長挨拶
+        </h2>
+
+        <p>
+            朕珍大学のホームページをご覧いただき、
+            誠にありがとうございます。
+        </p>
+
+        <p>
+            本学では、学生一人ひとりが
+            それぞれの専門分野を深く学び、
+            同時に幅広い視野を身につけられる
+            教育環境を整えています。
+        </p>
+
+        <p>
+            学問とは、単に知識を身につけることではありません。
+            自ら問いを見つけ、
+            考え、答えを探し続けることです。
+        </p>
+
+        <p>
+            本学での学びを通じて、
+            皆さんが一回りも二回りも成長されることを
+            心より願っています。
+        </p>
+
+        <p>
+            朕珍大学での経験が、
+            皆さんの人生にとって
+            大きな財産となることを願っています。
+        </p>
+
+        <p style="text-align:right;">
+            朕珍大学 学長
+        </p>
+
+        <p style="
+            margin-top:35px;
+            text-align:center;
+            font-weight:bold;
+            font-size:20px;
+            color:#12345b;
+        ">
+            本学を馬鹿にした人は、禁固刑にします。
+        </p>
+
+    </section>
+
+
+    <!-- 沿革 -->
+
+    <section class="section">
+
+        <h2>
+            沿革
+        </h2>
+
+
+        <div class="history">
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2020年
+                </div>
+
+                <p>
+                    朕珍大学設立構想が発案される。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2021年
+                </div>
+
+                <p>
+                    大学設立に向けた準備委員会を発足。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2022年
+                </div>
+
+                <p>
+                    朕珍大学設立。
+                    初年度は工学部のみでスタート。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2023年
+                </div>
+
+                <p>
+                    医学部を設置。
+                    医学・生命科学分野の教育研究を開始。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2024年
+                </div>
+
+                <p>
+                    建築学部・文学部を設置。
+                    総合大学としての体制を整える。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2025年
+                </div>
+
+                <p>
+                    穴流インフォメーションテクノロジー研究室を設置。
+                </p>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-year">
+                    2026年
+                </div>
+
+                <p>
+                    4学部体制を確立。
+                    次世代を担う人材育成をさらに推進。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 学部 -->
+
+    <section class="section">
+
+        <h2>
+            学部・学科
+        </h2>
+
+
+        <div class="faculties">
+
+            <div class="faculty">
+
+                <h3>
+                    工学部
+                </h3>
+
+                <p>
+                    科学技術と工学を通じて、
+                    社会の発展に貢献する人材を育成します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    医学部
+                </h3>
+
+                <p>
+                    医学に関する高度な知識と技術を身につけ、
+                    人々の健康を支える人材を育成します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    建築学部
+                </h3>
+
+                <p>
+                    建築・都市・空間について学び、
+                    豊かな生活環境を創造します。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    文学部
+                </h3>
+
+                <p>
+                    文学・言語・文化を通して、
+                    人間と社会について深く探究します。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

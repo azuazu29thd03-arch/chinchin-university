@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>工学部｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 大学ロゴ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: block;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 180px;
+    background: #f1f3f5;
+}
+
+.research-box {
+    background: #eef3f8;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.research-box h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 28px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4d7d;
+}
+
+.back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back a {
+    color: #12345b;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ対応 */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo-text">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            工学部
+        </h1>
+
+        <p>
+            FACULTY OF ENGINEERING
+        </p>
+
+    </div>
+
+
+    <!-- 工学部について -->
+
+    <section class="section">
+
+        <h2>
+            工学部について
+        </h2>
+
+        <p>
+
+            朕珍大学工学部では、
+            科学技術と工学に関する幅広い知識と技術を学び、
+            社会の発展に貢献できる人材の育成を目指しています。
+
+        </p>
+
+        <p>
+
+            基礎的な工学知識から最先端の研究まで、
+            幅広い分野について学ぶことができます。
+
+        </p>
+
+    </section>
+
+
+    <!-- 工学部長 -->
+
+    <section class="section">
+
+        <h2>
+            工学部長
+        </h2>
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    氏名
+                </th>
+
+                <td>
+                    浜崎 御天（はまさき おてぃん）
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    役職
+                </th>
+
+                <td>
+                    工学部長
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    専門分野
+                </th>
+
+                <td>
+                    医用工学
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- 教員 -->
+
+    <section class="section">
+
+        <h2>
+            教員
+        </h2>
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    准教授
+                </th>
+
+                <td>
+                    坂口 誠司（さかぐち せいじ）
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- 研究室 -->
+
+    <section class="section">
+
+        <h2>
+            研究室
+        </h2>
+
+
+        <div class="research-box">
+
+            <h3>
+                穴流インフォメーションテクノロジー研究室
+            </h3>
+
+            <p>
+
+                情報技術を中心とした
+                独自の研究を行っています。
+
+            </p>
+
+            <p>
+
+                室長：
+                築日 翼（ちぐひ つばさ）
+
+            </p>
+
+            <p>
+
+                研究員：
+                長谷川アナ
+
+            </p>
+
+            <p>
+
+                研究員：
+                柳本 石楠（やなぎもと せくす）
+
+            </p>
+
+
+            <a href="anal-information.html" class="button">
+
+                研究室の詳細を見る
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- 教員紹介 -->
+
+    <section class="section">
+
+        <h2>
+            教員紹介
+        </h2>
+
+        <p>
+
+            工学部所属の教員については、
+            教員紹介ページをご覧ください。
+
+        </p>
+
+        <a href="teachers.html" class="button">
+
+            教員紹介を見る
+
+        </a>
+
+    </section>
+
+
+    <div class="back">
+
+        <a href="faculties.html">
+            ← 学部・大学院に戻る
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

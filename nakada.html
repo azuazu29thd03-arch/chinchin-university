@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>中田 慎二｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.logo-text {
+    display: inline-block;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+/* パンくず */
+
+.breadcrumb {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: #12345b;
+    text-decoration: none;
+}
+
+/* プロフィール */
+
+.profile {
+    background: white;
+    padding: 45px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.profile-header {
+    border-bottom: 2px solid #12345b;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.position {
+    color: #12345b;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* 写真 */
+
+.photo-area {
+    width: 220px;
+    height: 280px;
+    background: #e5e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.photo-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 情報 */
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.info-table th,
+.info-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 180px;
+    background: #f1f3f5;
+}
+
+/* セクション */
+
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    border-left: 5px solid #12345b;
+    padding-left: 12px;
+    font-size: 24px;
+}
+
+.section p {
+    line-height: 2;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ対応 */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .profile {
+        padding: 25px;
+    }
+
+    .profile-header h1 {
+        font-size: 28px;
+    }
+
+    .photo-area {
+        margin: 0 auto 30px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo-text">
+                朕珍大学
+                <span>Chinchin University</span>
+            </div>
+
+        </div>
+
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">大学案内</a>
+            </li>
+
+            <li>
+                <a href="index.html">学部・大学院</a>
+            </li>
+
+            <li>
+                <a href="index.html">研究活動</a>
+            </li>
+
+            <li>
+                <a href="teachers.html">教員紹介</a>
+            </li>
+
+            <li>
+                <a href="index.html">入試情報</a>
+            </li>
+
+            <li>
+                <a href="index.html">学生生活</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="breadcrumb">
+
+        <a href="index.html">トップ</a>
+
+        ＞
+
+        <a href="teachers.html">教員紹介</a>
+
+        ＞
+
+        中田 慎二
+
+    </div>
+
+
+    <div class="profile">
+
+
+        <div class="profile-header">
+
+            <h1>中田 慎二</h1>
+
+            <div class="position">
+                教授
+            </div>
+
+        </div>
+
+
+        <!-- 先生の写真 -->
+
+        <div class="photo-area">
+
+            <img src="中田.jpg" alt="中田 慎二">
+
+        </div>
+
+
+        <!-- 基本情報 -->
+
+        <table class="info-table">
+
+            <tr>
+                <th>氏名</th>
+                <td>中田 慎二（なかだ しんじ）</td>
+            </tr>
+
+            <tr>
+                <th>所属</th>
+                <td>朕珍大学 医学部</td>
+            </tr>
+
+            <tr>
+                <th>役職</th>
+                <td>教授</td>
+            </tr>
+
+            <tr>
+                <th>専門分野</th>
+                <td>医学・循環器学</td>
+            </tr>
+
+        </table>
+
+
+        <!-- 研究・教育 -->
+
+        <section class="section">
+
+            <h2>研究・教育</h2>
+
+            <p>
+                医学分野における研究と教育に携わり、
+                新たな技術の可能性を追求しています。
+            </p>
+
+        </section>
+
+
+        <!-- 学生へのメッセージ -->
+
+        <section class="section">
+
+            <h2>学生へのメッセージ</h2>
+
+            <p>
+                人生という長いマラソンを気持ちよく完走するために、
+                医学を学ぶ必要があります。
+                医学部以外の生徒を見かけた時は禁固刑にしますので、
+                注意してください。
+            </p>
+
+        </section>
+
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

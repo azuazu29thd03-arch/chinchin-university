@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>教員紹介｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+/* 学部 */
+
+.faculty-section {
+    margin-bottom: 55px;
+}
+
+.faculty-title {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.faculty-title h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+/* 教員カード */
+
+.teachers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.teacher-card {
+    background: white;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-top: 4px solid #12345b;
+}
+
+.teacher-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.teacher-card h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.position {
+    color: #12345b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.teacher-info {
+    color: #666;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.profile-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.profile-button:hover {
+    background: #1d4d7d;
+}
+
+/* 研究室 */
+
+.laboratory {
+    background: #e9eef3;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.laboratory h3 {
+    color: #12345b;
+    font-size: 21px;
+}
+
+.laboratory p {
+    line-height: 1.8;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .teachers {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .school-emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+                朕珍大学
+                <span>Chinchin University</span>
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main class="main">
+
+    <div class="page-title">
+
+        <h1>教員紹介</h1>
+
+        <p>FACULTY &amp; STAFF</p>
+
+    </div>
+
+
+    <!-- 工学部 -->
+
+    <section class="faculty-section">
+
+        <div class="faculty-title">
+
+            <h2>工学部</h2>
+
+        </div>
+
+
+        <div class="teachers">
+
+            <div class="teacher-card">
+
+                <img src="浜崎.jpg" alt="浜崎 御天">
+
+                <h3>浜崎 御天</h3>
+
+                <div class="position">
+                    工学部長
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：工学・医工学<br>
+                    所属：工学部
+
+                </div>
+
+                <a href="hamasaki.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img src="坂口.jpg" alt="坂口 誠司">
+
+                <h3>坂口 誠司</h3>
+
+                <div class="position">
+                    准教授
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：工学・システム科学<br>
+                    所属：工学部
+
+                </div>
+
+                <a href="sakaguchi.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="laboratory">
+
+            <h3>
+                穴流インフォメーションテクノロジー研究室
+            </h3>
+
+            <p>
+                情報技術の可能性を追求し、穴の中に水が流れるように、
+                次世代の社会を支える研究を行っています。
+            </p>
+
+            <p>
+                <strong>室長：</strong>
+                築日 翼（ちぐひ つばさ）
+            </p>
+
+            <p>
+                <strong>研究員：</strong>
+                長谷川　アナ（はせがわ　アナ）
+            </p>
+
+            <p>
+                <strong>研究員：</strong>
+                柳本 石楠（やなぎもと せくす）
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 医学部 -->
+
+    <section class="faculty-section">
+
+        <div class="faculty-title">
+
+            <h2>医学部</h2>
+
+        </div>
+
+
+        <div class="teachers">
+
+            <div class="teacher-card">
+
+                <img src="星川.jpg" alt="星川 飛">
+
+                <h3>星川 飛</h3>
+
+                <div class="position">
+                    医学部長
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：医学・泌尿器科学<br>
+                    所属：医学部
+
+                </div>
+
+                <a href="hoshikawa.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img src="中田.jpg" alt="中田 慎二">
+
+                <h3>中田 慎二</h3>
+
+                <div class="position">
+                    教授
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：医学・生命科学<br>
+                    所属：医学部
+
+                </div>
+
+                <a href="nakada.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 建築学部 -->
+
+    <section class="faculty-section">
+
+        <div class="faculty-title">
+
+            <h2>建築学部</h2>
+
+        </div>
+
+
+        <div class="teachers">
+
+            <div class="teacher-card">
+
+                <img src="大谷.jpg" alt="大谷 ケモ">
+
+                <h3>大谷 ケモ</h3>
+
+                <div class="position">
+                    建築学部長
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：建築学<br>
+                    所属：建築学部
+
+                </div>
+
+                <a href="otani.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img src="土井.jpg" alt="土井 和子">
+
+                <h3>土井 和子</h3>
+
+                <div class="position">
+                    教授
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：建築・都市計画<br>
+                    所属：建築学部
+
+                </div>
+
+                <a href="doi.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 文学部 -->
+
+    <section class="faculty-section">
+
+        <div class="faculty-title">
+
+            <h2>文学部</h2>
+
+        </div>
+
+
+        <div class="teachers">
+
+            <div class="teacher-card">
+
+                <img src="佐々木.jpg" alt="佐々木 金三郎">
+
+                <h3>佐々木 金三郎</h3>
+
+                <div class="position">
+                    文学部長
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：文学・人文学<br>
+                    所属：文学部
+
+                </div>
+
+                <a href="sasaki.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img src="金田.jpg" alt="金田 珠子">
+
+                <h3>金田 珠子</h3>
+
+                <div class="position">
+                    教授
+                </div>
+
+                <div class="teacher-info">
+
+                    専門：文学・文化研究<br>
+                    所属：文学部
+
+                </div>
+
+                <a href="kaneda.html" class="profile-button">
+                    プロフィール
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>朕珍大学 Chinchin University</p>
+
+    <p>© 2026 Chinchin University. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>穴流インフォメーションテクノロジー研究室｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.member {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.member h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.member-role {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.theme {
+    background: #eef3f8;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.theme h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+.message {
+    background: #f1f3f5;
+    border-left: 4px solid #12345b;
+    padding: 25px;
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4d7d;
+}
+
+.back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back a {
+    color: #12345b;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo-text">
+                朕珍大学
+                <span>Chinchin University</span>
+            </div>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main class="main">
+
+    <div class="page-title">
+
+        <h1>
+            穴流インフォメーションテクノロジー研究室
+        </h1>
+
+        <p>
+            ANAL INFORMATION TECHNOLOGY LABORATORY
+        </p>
+
+    </div>
+
+    <section class="section">
+
+        <h2>
+            研究室概要
+        </h2>
+
+        <p>
+            穴流インフォメーションテクノロジー研究室は、
+            朕珍大学工学部に所属する研究室です。
+        </p>
+
+        <p>
+            情報技術を中心として、
+            新たな情報社会の可能性を探究しています。
+        </p>
+
+        <p>
+            従来の常識にとらわれない自由な発想を大切にし、
+            独創的な研究活動を行っています。
+        </p>
+
+    </section>
+
+    <section class="section">
+
+        <h2>
+            研究室メンバー
+        </h2>
+
+        <div class="member">
+
+            <img src="築日.jpg" alt="築日 翼">
+
+            <h3>
+                <a href="chiguhi.html" style="color:#12345b; text-decoration:none;">
+                    築日 翼
+                </a>
+            </h3>
+
+            <div class="member-role">
+                研究室長
+            </div>
+
+            <p>
+                穴流インフォメーションテクノロジー研究室を率いる研究室長。
+            </p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="長谷川.jpg" alt="長谷川アナ">
+
+            <h3>
+                <a href="hasegawa.html" style="color:#12345b; text-decoration:none;">
+                    長谷川アナ
+                </a>
+            </h3>
+
+            <div class="member-role">
+                研究員
+            </div>
+
+            <p>
+                情報技術に関する研究を担当しています。
+            </p>
+
+        </div>
+
+        <div class="member">
+
+            <img src="柳本.jpg" alt="柳本 石楠">
+
+            <h3>
+                <a href="yanagimoto.html" style="color:#12345b; text-decoration:none;">
+                    柳本 石楠
+                </a>
+            </h3>
+
+            <div class="member-role">
+                研究員
+            </div>
+
+            <p>
+                独自の視点から情報技術の研究に取り組んでいます。
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>
+            主な研究テーマ
+        </h2>
+
+        <div class="theme">
+
+            <h3>
+                情報技術と人間社会
+            </h3>
+
+            <p>
+                情報技術が人間の生活や社会に
+                どのような影響を与えるのかを研究します。
+            </p>
+
+        </div>
+
+        <div class="theme">
+
+            <h3>
+                次世代情報システム
+            </h3>
+
+            <p>
+                未来の情報社会を支える
+                新しい情報システムについて研究します。
+            </p>
+
+        </div>
+
+        <div class="theme">
+
+            <h3>
+                穴流情報工学
+            </h3>
+
+            <p>
+                本研究室独自の研究領域として、
+                穴流情報工学に関する基礎研究および応用研究を行っています。
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>
+            研究実績
+        </h2>
+
+        <p>
+            本研究室では、情報技術に関する
+            様々な研究成果を発表しています。
+        </p>
+
+        <ul>
+
+            <li>
+                穴流情報技術に関する基礎研究
+            </li>
+
+            <li>
+                次世代情報システムの開発
+            </li>
+
+            <li>
+                情報技術と人間社会に関する研究
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="section">
+
+        <h2>
+            室長からのメッセージ
+        </h2>
+
+        <div class="message">
+
+            <p>
+                穴流インフォメーションテクノロジー研究室では、
+                常識にとらわれない自由な発想を大切にしています。
+            </p>
+
+            <p>
+                「こんな研究をしてみたい」という気持ちを大切にし、
+                新しい可能性を一緒に探していきましょう。
+            </p>
+
+            <p style="text-align:right;">
+
+                穴流インフォメーションテクノロジー研究室<br>
+                室長　築日 翼
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <div class="back">
+
+        <a href="engineering.html">
+            ← 工学部に戻る
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>

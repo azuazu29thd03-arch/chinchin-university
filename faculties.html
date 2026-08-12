@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>学部・大学院｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 大学ロゴ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: block;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+/* 学部カード */
+
+.faculty-card {
+    background: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.faculty-card h2 {
+    color: #12345b;
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+}
+
+.faculty-card p {
+    line-height: 2;
+}
+
+.faculty-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.faculty-link:hover {
+    background: #1d4d7d;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ対応 */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo-text">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+<div class="page-title">
+
+<h1>
+学部・大学院
+</h1>
+
+<p>
+FACULTIES & GRADUATE SCHOOL
+</p>
+
+</div>
+
+
+
+<!-- 工学部 -->
+
+<div class="faculty-card">
+
+<h2>
+工学部
+</h2>
+
+<p>
+
+科学技術と工学を幅広く学び、
+社会の発展に貢献する人材を育成します。
+
+</p>
+
+<p>
+
+<strong>工学部長：</strong>
+浜崎 御天
+
+</p>
+
+<p>
+
+<strong>准教授：</strong>
+坂口 誠司
+
+</p>
+
+<p>
+
+<strong>主な研究施設：</strong>
+穴流インフォメーションテクノロジー研究室
+
+</p>
+
+<a href="engineering.html" class="faculty-link">
+工学部について
+</a>
+
+</div>
+
+
+
+<!-- 医学部 -->
+
+<div class="faculty-card">
+
+<h2>
+医学部
+</h2>
+
+<p>
+
+医学に関する高度な知識と技術を身につけ、
+人々の健康を支える医療人を育成します。
+
+</p>
+
+<p>
+
+<strong>医学部長：</strong>
+星川 飛
+
+</p>
+
+<p>
+
+<strong>教授：</strong>
+中田 慎二
+
+</p>
+
+<a href="medicine.html" class="faculty-link">
+医学部について
+</a>
+
+</div>
+
+
+
+<!-- 建築学部 -->
+
+<div class="faculty-card">
+
+<h2>
+建築学部
+</h2>
+
+<p>
+
+建築・都市・空間について学び、
+豊かな生活環境を創造します。
+
+</p>
+
+<p>
+
+<strong>建築学部長：</strong>
+大谷 ケモ
+
+</p>
+
+<p>
+
+<strong>教授：</strong>
+土井 和子
+
+</p>
+
+<a href="architecture.html" class="faculty-link">
+建築学部について
+</a>
+
+</div>
+
+
+
+<!-- 文学部 -->
+
+<div class="faculty-card">
+
+<h2>
+文学部
+</h2>
+
+<p>
+
+文学・言語・文化を通して、
+人間と社会について深く探究します。
+
+</p>
+
+<p>
+
+<strong>文学部長：</strong>
+佐々木 金三郎
+
+</p>
+
+<p>
+
+<strong>教授：</strong>
+金田 珠子
+
+</p>
+
+<a href="literature.html" class="faculty-link">
+文学部について
+</a>
+
+</div>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+朕珍大学 Chinchin University
+</p>
+
+<p>
+© 2026 Chinchin University. All Rights Reserved.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>

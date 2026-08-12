@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>れぽれぽきっず☆｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 校章＋大学名 */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+    letter-spacing: 2px;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.hero {
+    background: #eef3f8;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #12345b;
+    margin-top: 0;
+}
+
+.catchcopy {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 180px;
+    background: #eef1f4;
+}
+
+.event {
+    border-left: 5px solid #12345b;
+    background: #fafbfc;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.event h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.message {
+    background: #eef3f8;
+    padding: 30px;
+    line-height: 2;
+}
+
+.join {
+    background: #fff8df;
+    border: 1px solid #e5d38a;
+    padding: 30px;
+    text-align: center;
+}
+
+.join h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4d7d;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .info-table th {
+        width: 120px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            れぽれぽきっず☆(青少年育成団体Repo Repo Kids☆)
+        </h1>
+
+        <p>
+            REPORÉPO KIDS☆
+        </p>
+
+    </div>
+
+
+
+    <!-- メイン -->
+
+    <section class="hero">
+
+        <h2>
+            れぽれぽきっず☆
+        </h2>
+
+        <div class="catchcopy">
+            「楽しく、自由に、れぽれぽと。」
+        </div>
+
+        <p>
+            れぽれぽきっず☆は、
+            朕珍大学の学生によって運営されている
+            学生交流サークルです。
+        </p>
+
+    </section>
+
+
+
+    <!-- サークル紹介 -->
+
+    <section class="section">
+
+        <h2>
+            れぽれぽきっず☆とは
+        </h2>
+
+        <p>
+            れぽれぽきっず☆では、
+            学部や学年を問わず、
+            様々な学生が交流しています。
+        </p>
+
+        <p>
+            特別な能力や経験は必要ありません。
+            「なんとなく楽しそう」という理由だけでも
+            入部することができます。
+        </p>
+
+        <p>
+            勉強や研究だけではなく、
+            大学生活そのものを楽しむことを
+            大切にしています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 基本情報 -->
+
+    <section class="section">
+
+        <h2>
+            サークル基本情報
+        </h2>
+
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    サークル名
+                </th>
+
+                <td>
+                    れぽれぽきっず☆(青少年育成団体Repo Repo Kids☆)
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    設立
+                </th>
+
+                <td>
+                    2024年
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    活動日
+                </th>
+
+                <td>
+                    毎週金曜日
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    活動場所
+                </th>
+
+                <td>
+                    朕珍大学 学生会館
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    所属人数
+                </th>
+
+                <td>
+                    約37名
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    対象
+                </th>
+
+                <td>
+                    朕珍大学の全学生
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 活動内容 -->
+
+    <section class="section">
+
+        <h2>
+            主な活動内容
+        </h2>
+
+        <p>
+            れぽれぽきっず☆では、
+            以下のような活動を行っています。
+        </p>
+
+        <ul>
+
+            <li>
+                学生同士の交流会
+            </li>
+
+            <li>
+                ゲーム大会
+            </li>
+
+            <li>
+                食事会
+            </li>
+
+            <li>
+                季節ごとのイベント
+            </li>
+
+            <li>
+                大学祭への参加
+            </li>
+
+            <li>
+                特に目的のない集まり
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- 年間イベント -->
+
+    <section class="section">
+
+        <h2>
+            年間イベント
+        </h2>
+
+
+        <div class="event">
+
+            <h3>
+                4月　新入生歓迎会
+            </h3>
+
+            <p>
+                新入生と先輩が交流する恒例イベントです。
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                6月　れぽれぽ交流会
+            </h3>
+
+            <p>
+                特に決まった目的はありません。
+                みんなで集まって楽しく過ごします。
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                8月　夏季れぽれぽ大会
+            </h3>
+
+            <p>
+                ゲームやレクリエーションなどを行います。
+                勝敗よりも楽しむことを重視します。
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                11月　朕珍大学祭
+            </h3>
+
+            <p>
+                大学祭に出店・参加します。
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                12月　年末れぽれぽ会
+            </h3>
+
+            <p>
+                1年間の活動を振り返りながら、
+                楽しく交流します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- メッセージ -->
+
+    <section class="section">
+
+        <h2>
+            サークルからのメッセージ
+        </h2>
+
+
+        <div class="message">
+
+            <p>
+                れぽれぽきっず☆では、
+                「大学生活を楽しむ」という気持ちを
+                一番大切にしています。
+            </p>
+
+            <p>
+                学部や学年は問いません。
+            </p>
+
+            <p>
+                初めてサークルに入る人も、
+                大歓迎です。
+            </p>
+
+            <p>
+                少しでも興味がある人は、
+                ぜひ一度遊びに来てください。
+            </p>
+
+            <p style="text-align:right;">
+                れぽれぽきっず☆一同
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 入部 -->
+
+    <section class="section">
+
+        <div class="join">
+
+            <h3>
+                れぽれぽきっず☆に入りませんか？
+            </h3>
+
+            <p>
+                「楽しそう」
+                「友達がほしい」
+                「暇だから」
+                どんな理由でも大歓迎です。
+            </p>
+
+            <p>
+                れぽれぽきっず☆は、
+                あなたの参加をお待ちしています。
+            </p>
+
+            <a
+                href="recruitment.html"
+                class="button"
+            >
+                入部について問い合わせる
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

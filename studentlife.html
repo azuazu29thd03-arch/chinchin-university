@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>学生生活｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 校章＋大学名 */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.circle-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fafbfc;
+}
+
+.circle-card h3 {
+    margin-top: 0;
+    color: #12345b;
+    font-size: 21px;
+}
+
+.circle-card p {
+    margin-bottom: 8px;
+}
+
+.circle-info {
+    color: #666;
+    font-size: 14px;
+}
+
+.circle-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.circle-button:hover {
+    background: #1d4d7d;
+}
+
+.notice {
+    background: #eef3f8;
+    border-left: 5px solid #12345b;
+    padding: 25px;
+    line-height: 2;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            学生生活
+        </h1>
+
+        <p>
+            CAMPUS LIFE
+        </p>
+
+    </div>
+
+
+
+    <!-- 学生生活について -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学の学生生活
+        </h2>
+
+        <p>
+            朕珍大学では、授業や研究だけでなく、
+            サークル活動や大学行事などを通じて、
+            多くの学生が充実したキャンパスライフを送っています。
+        </p>
+
+        <p>
+            同じ目標を持つ仲間と出会い、
+            新しいことに挑戦することができます。
+        </p>
+
+    </section>
+
+
+
+    <!-- サークル -->
+
+    <section class="section">
+
+        <h2>
+            サークル活動
+        </h2>
+
+        <p>
+            朕珍大学には、学部や学年の垣根を越えて
+            活動する様々なサークルがあります。
+        </p>
+
+
+
+        <div class="circle-card">
+
+            <h3>
+                青少年育成団体Repo Repo Kids☆
+            </h3>
+
+            <p>
+                楽しく遊び、学び、交流することを
+                目的とした学生団体です。
+            </p>
+
+            <p class="circle-info">
+                活動分野：交流・イベント・レクリエーション
+            </p>
+
+            <a
+                href="reporepo.html"
+                class="circle-button"
+            >
+                サークル詳細
+            </a>
+
+        </div>
+
+
+
+        <div class="circle-card">
+
+            <h3>
+                穴流IT研究会
+            </h3>
+
+            <p>
+                AI・プログラミング・情報技術について
+                自由に研究するサークルです。
+            </p>
+
+            <p class="circle-info">
+                活動分野：IT・AI・プログラミング
+            </p>
+
+        </div>
+
+
+
+        <div class="circle-card">
+
+            <h3>
+                ジャングル探検部
+            </h3>
+
+            <p>
+                未知なる自然を求めて、
+                様々な場所へ冒険に出かけます。
+            </p>
+
+            <p class="circle-info">
+                活動分野：アウトドア・探検
+            </p>
+
+        </div>
+
+
+
+        <div class="circle-card">
+
+            <h3>
+                2段建築研究会
+            </h3>
+
+            <p>
+                次世代の2段建築について研究し、
+                新しい空間の可能性を追求します。
+            </p>
+
+            <p class="circle-info">
+                活動分野：建築・デザイン
+            </p>
+
+        </div>
+
+
+
+        <div class="circle-card">
+
+            <h3>
+                文学探究会
+            </h3>
+
+            <p>
+                様々な文学作品を読み、
+                作品について自由に語り合います。
+            </p>
+
+            <p class="circle-info">
+                活動分野：文学・読書・文化
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- サークル活動の注意 -->
+
+    <section class="section">
+
+        <h2>
+            サークル活動について
+        </h2>
+
+        <div class="notice">
+
+            <p>
+                サークルへの加入・見学を希望する学生は、
+                各サークルの代表者までお問い合わせください。
+            </p>
+
+            <p>
+                複数のサークルに所属することも可能です。
+            </p>
+
+            <p>
+                ただし、活動に夢中になりすぎて
+                授業への出席を忘れないよう注意してください。
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

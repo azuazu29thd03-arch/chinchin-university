@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>朕珍大学｜Chinchin University</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 校章＋大学名 */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* ナビゲーション */
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メインビジュアル */
+.hero {
+    height: 430px;
+    background:
+        linear-gradient(rgba(0,40,80,0.55), rgba(0,40,80,0.55)),
+        linear-gradient(135deg, #789ab8, #d8e2ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 15px;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* 共通 */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #777;
+}
+
+/* ニュース */
+.news {
+    background: white;
+}
+
+.news-list {
+    max-width: 850px;
+    margin: auto;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 10px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+}
+
+.news-item:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.news-item:hover {
+    opacity: 0.7;
+    text-decoration: none !important;
+}
+
+.news-date {
+    color: #777;
+    min-width: 100px;
+}
+
+.news-category {
+    background: #12345b;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    height: fit-content;
+}
+
+.news-list a.news-item span:not(.news-category) {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* 学部 */
+.faculties {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.faculty {
+    background: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 5px solid #12345b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.faculty h3 {
+    margin-top: 0;
+}
+
+.faculty p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* 研究室 */
+.research {
+    background: #e9eef3;
+}
+
+.research-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.research-box h3 {
+    color: #12345b;
+    font-size: 23px;
+}
+
+.research-box ul {
+    line-height: 2;
+}
+
+/* フッター */
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .faculties {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <!-- 校章 -->
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="emblem"
+            >
+
+            <!-- 大学名 -->
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div>
+
+        <h1>
+            知を極め、未来を創る。
+        </h1>
+
+        <p>
+            朕珍大学 ― 新たな可能性への挑戦
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="news">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                NEWS
+            </h2>
+
+            <p>
+                朕珍大学からのお知らせ
+            </p>
+
+        </div>
+
+
+        <div class="news-list">
+
+
+            <a
+                href="news-research.html"
+                class="news-item"
+            >
+
+                <span class="news-date">
+                    2026.08.12
+                </span>
+
+                <span class="news-category">
+                    研究
+                </span>
+
+                <span>
+                    穴流インフォメーションテクノロジー研究室が新たな研究成果を発表しました。
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="news-summer.html"
+                class="news-item"
+            >
+
+                <span class="news-date">
+                    2026.08.05
+                </span>
+
+                <span class="news-category">
+                    大学
+                </span>
+
+                <span>
+                    夏季休業期間中の窓口業務について
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="news-student.html"
+                class="news-item"
+            >
+
+                <span class="news-date">
+                    2026.07.28
+                </span>
+
+                <span class="news-category">
+                    学生
+                </span>
+
+                <span>
+                    学生生活に関する重要なお知らせ
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                FACULTIES
+            </h2>
+
+            <p>
+                学部紹介
+            </p>
+
+        </div>
+
+
+        <div class="faculties">
+
+
+            <div class="faculty">
+
+                <h3>
+                    工学部
+                </h3>
+
+                <p>
+                    Engineering
+                </p>
+
+                <p>
+                    科学技術を通じて未来を切り拓く。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    医学部
+                </h3>
+
+                <p>
+                    Medicine
+                </p>
+
+                <p>
+                    生命と健康について学ぶ。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    建築学部
+                </h3>
+
+                <p>
+                    Architecture
+                </p>
+
+                <p>
+                    人と空間の未来を創造する。
+                </p>
+
+            </div>
+
+
+            <div class="faculty">
+
+                <h3>
+                    文学部
+                </h3>
+
+                <p>
+                    Literature
+                </p>
+
+                <p>
+                    言葉と文化の可能性を探究する。
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="research">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                RESEARCH
+            </h2>
+
+            <p>
+                研究活動
+            </p>
+
+        </div>
+
+
+        <div class="research-box">
+
+            <h3>
+                穴流インフォメーションテクノロジー研究室
+            </h3>
+
+            <p>
+                情報技術の可能性を追求し、
+                次世代の社会を支える研究を行っています。
+            </p>
+
+
+            <ul>
+
+                <li>
+                    <strong>室長：</strong>
+                    築日 翼（ちぐひ つばさ）
+                </li>
+
+                <li>
+                    <strong>研究員：</strong>
+                    長谷川アナ
+                </li>
+
+                <li>
+                    <strong>研究員：</strong>
+                    柳本 石楠（やなぎもと せくす）
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

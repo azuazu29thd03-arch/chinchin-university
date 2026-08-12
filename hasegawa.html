@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>長谷川アナ｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.university-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.university-logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.profile {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.photo {
+    width: 260px;
+    height: 320px;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #12345b;
+}
+
+.profile-info h2 span {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 13px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 130px;
+    background: #f1f3f5;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.theme {
+    background: #eef3f8;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.theme h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.message {
+    background: #f1f3f5;
+    border-left: 4px solid #12345b;
+    padding: 25px;
+    line-height: 2;
+}
+
+.back {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back a {
+    color: #12345b;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .university-logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .university-logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .photo {
+        margin: 0 auto 30px;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="university-logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </div>
+
+        </a>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            教員紹介
+        </h1>
+
+        <p>
+            FACULTY PROFILE
+        </p>
+
+    </div>
+
+
+    <!-- プロフィール -->
+
+    <div class="profile">
+
+
+        <div class="photo">
+
+            <img src="長谷川.jpg" alt="長谷川アナ">
+
+        </div>
+
+
+        <div class="profile-info">
+
+            <h2>
+                長谷川アナ
+            </h2>
+
+
+            <table class="info-table">
+
+                <tr>
+
+                    <th>
+                        所属
+                    </th>
+
+                    <td>
+                        朕珍大学 工学部
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <th>
+                        役職
+                    </th>
+
+                    <td>
+                        穴流インフォメーションテクノロジー研究室 研究員
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <th>
+                        専門分野
+                    </th>
+
+                    <td>
+                        人工知能・音声情報処理・感情情報工学
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- 研究テーマ -->
+
+    <section class="section">
+
+        <h2>
+            研究テーマ
+        </h2>
+
+
+        <div class="theme">
+
+            <h3>
+                感情情報解析
+            </h3>
+
+            <p>
+                人間の声に含まれる様々な情報を解析し、
+                声から感情を推定する研究を行っています。
+            </p>
+
+        </div>
+
+
+        <div class="theme">
+
+            <h3>
+                音声から読み取る人間の心理
+            </h3>
+
+            <p>
+                声の高さ、速さ、間、抑揚などの特徴から、
+                人間の心理状態を読み取る可能性について研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="theme">
+
+            <h3>
+                穴流音声認識システム
+            </h3>
+
+            <p>
+                穴流インフォメーションテクノロジー研究室独自の
+                音声認識理論の確立を目指しています。
+            </p>
+
+        </div>
+
+
+        <div class="theme">
+
+            <h3>
+                AIによる感情予測
+            </h3>
+
+            <p>
+                AIを用いて音声情報から人間の感情を推定する
+                次世代型システムの研究を行っています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 経歴 -->
+
+    <section class="section">
+
+        <h2>
+            経歴
+        </h2>
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    2018年
+                </th>
+
+                <td>
+                    朕珍大学 工学部 情報工学科 卒業
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    2020年
+                </th>
+
+                <td>
+                    朕珍大学大学院 工学研究科 修士課程修了
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    2023年
+                </th>
+
+                <td>
+                    朕珍大学大学院 工学研究科 博士課程修了
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    2023年
+                </th>
+
+                <td>
+                    朕珍大学 工学部 研究員
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 研究実績 -->
+
+    <section class="section">
+
+        <h2>
+            主な研究実績
+        </h2>
+
+        <ul>
+
+            <li>
+                声の間から読み取る感情情報に関する研究
+            </li>
+
+            <li>
+                AIによる感情推定システムの開発
+            </li>
+
+            <li>
+                穴流音声認識理論の基礎
+            </li>
+
+            <li>
+                人間の声における非言語情報の解析
+            </li>
+
+            <li>
+                AIは人間の感情をどこまで理解できるのか
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- 学生へのメッセージ -->
+
+    <section class="section">
+
+        <h2>
+            学生へのメッセージ
+        </h2>
+
+
+        <div class="message">
+
+            <p>
+                AIは、人間ができないことをするためだけの技術ではありません。
+            </p>
+
+            <p>
+                人間が当たり前だと思っていることを、
+                もう一度見つめ直すための道具でもあります。
+            </p>
+
+            <p>
+                「なぜ？」という疑問を大切にしてください。
+            </p>
+
+            <p>
+                そして、研究に行き詰まったときは、
+                <strong>一度声に出して考えてみましょう。</strong>
+            </p>
+
+            <p>
+                意外と答えは、声の中にあるかもしれません。
+            </p>
+
+
+            <p style="text-align:right;">
+
+                穴流インフォメーションテクノロジー研究室<br>
+                研究員　長谷川アナ
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="back">
+
+        <a href="anal-information.html">
+            ← 穴流インフォメーションテクノロジー研究室に戻る
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>研究成果発表｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* 校章 */
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: block;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+
+/* ナビゲーション */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+
+/* ページタイトル */
+
+.page-title {
+    background: #e9eef3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-title h1 {
+    margin: 0 0 10px;
+    color: #12345b;
+    font-size: 34px;
+}
+
+.page-title p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* 本文 */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.article {
+    background: white;
+    padding: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.category {
+    display: inline-block;
+    background: #12345b;
+    color: white;
+    padding: 5px 14px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    color: #12345b;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.date {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.article p {
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.article h3 {
+    color: #12345b;
+    border-left: 5px solid #12345b;
+    padding-left: 12px;
+    margin-top: 40px;
+}
+
+
+/* ボタン */
+
+.buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4d7d;
+}
+
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-text {
+        text-align: left;
+        font-size: 26px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .article {
+        padding: 30px 20px;
+    }
+
+    .article h2 {
+        font-size: 23px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            <!-- 校章 -->
+
+            <img
+                src="校章.png"
+                alt="朕珍大学校章"
+                class="emblem"
+            >
+
+            <span class="logo-text">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </span>
+
+        </a>
+
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <h1>
+        NEWS
+    </h1>
+
+    <p>
+        朕珍大学からのお知らせ
+    </p>
+
+</section>
+
+
+
+<main>
+
+    <div class="container">
+
+        <article class="article">
+
+            <div class="category">
+                研究
+            </div>
+
+
+            <h2>
+                穴流インフォメーションテクノロジー研究室が
+                新たな研究成果を発表しました。
+            </h2>
+
+
+            <div class="date">
+                2026年8月12日
+            </div>
+
+
+            <p>
+                朕珍大学穴流インフォメーションテクノロジー研究室では、
+                情報技術の可能性を追求し、
+                次世代の社会を支える研究を行っています。
+            </p>
+
+
+            <p>
+                このたび、研究室における最新の研究成果を取りまとめ、
+                新たな研究成果を発表しました。
+            </p>
+
+
+            <h3>
+                研究成果について
+            </h3>
+
+
+            <p>
+                今回の研究では、
+                情報技術を活用した新たなシステムの可能性について
+                研究を行いました。
+            </p>
+
+
+            <p>
+                研究を通じて、
+                今後の社会における情報技術のさらなる発展につながる
+                新たな知見が得られました。
+            </p>
+
+
+            <h3>
+                今後の研究について
+            </h3>
+
+
+            <p>
+                穴流インフォメーションテクノロジー研究室では、
+                今後も研究活動を継続し、
+                情報技術のさらなる可能性を追求していきます。
+            </p>
+
+
+            <p>
+                朕珍大学は、これからも学生・教員による
+                研究活動を積極的に推進してまいります。
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="research.html"
+                    class="button"
+                >
+                    研究活動を見る
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="button"
+                >
+                    トップページへ戻る
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
