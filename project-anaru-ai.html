@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>穴流AIプロジェクト｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+
+/* セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+
+/* 研究概要 */
+
+.research-summary {
+    background: #eef3f8;
+    padding: 30px;
+    border-left: 5px solid #12345b;
+    margin-bottom: 25px;
+}
+
+.research-summary h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* 研究分野 */
+
+.field-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 18px;
+    background: #fafbfc;
+}
+
+.field-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* メンバー */
+
+.member {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.member:first-child {
+    padding-top: 0;
+}
+
+.member:last-child {
+    border-bottom: none;
+}
+
+.member h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* 研究テーマ */
+
+.theme {
+    border-left: 4px solid #12345b;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #fafbfc;
+}
+
+.theme h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+
+/* 注意 */
+
+.notice {
+    background: #fff7e6;
+    border-left: 5px solid #d99a00;
+    padding: 25px;
+    line-height: 2;
+}
+
+
+/* 戻るボタン */
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #1d4d7d;
+}
+
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* スマホ対応 */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            穴流AIプロジェクト
+        </h1>
+
+        <p>
+            ANARU AI PROJECT
+        </p>
+
+    </div>
+
+
+
+    <!-- 概要 -->
+
+    <section class="section">
+
+        <h2>
+            プロジェクト概要
+        </h2>
+
+        <div class="research-summary">
+
+            <h3>
+                情報技術の新たな可能性を探る
+            </h3>
+
+            <p>
+                穴流AIプロジェクトは、
+                穴流インフォメーションテクノロジー研究室を
+                中心として進められている学際的研究プロジェクトです。
+            </p>
+
+            <p>
+                AIによる情報解析と、
+                独自の情報技術を組み合わせることで、
+                これまでにない情報処理の可能性を追求しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究目的 -->
+
+    <section class="section">
+
+        <h2>
+            研究目的
+        </h2>
+
+        <p>
+            本プロジェクトでは、
+            AI技術を活用した情報解析手法の開発を行っています。
+        </p>
+
+        <p>
+            特に、大量の情報の中から重要な情報を抽出し、
+            分析・整理するための新しい手法について研究しています。
+        </p>
+
+        <p>
+            また、AIと人間がどのように協力して
+            情報を扱うべきなのかについても検討しています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 研究分野 -->
+
+    <section class="section">
+
+        <h2>
+            主な研究分野
+        </h2>
+
+
+        <div class="field-card">
+
+            <h3>
+                AI・機械学習
+            </h3>
+
+            <p>
+                機械学習や人工知能を利用した
+                情報解析技術について研究します。
+            </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+            <h3>
+                音声情報処理
+            </h3>
+
+            <p>
+                音声認識や音声データの解析など、
+                音に関する情報処理技術を研究します。
+            </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+            <h3>
+                情報セキュリティ
+            </h3>
+
+            <p>
+                情報を安全に取り扱うための
+                セキュリティ技術について研究します。
+            </p>
+
+        </div>
+
+
+        <div class="field-card">
+
+            <h3>
+                情報解析
+            </h3>
+
+            <p>
+                大量のデータから特徴や傾向を見つけ出す
+                情報解析手法について研究します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究テーマ -->
+
+    <section class="section">
+
+        <h2>
+            主な研究テーマ
+        </h2>
+
+
+        <div class="theme">
+
+            <h3>
+                AIによる情報解析
+            </h3>
+
+            <p>
+                AIを用いて大量の情報を解析し、
+                人間だけでは発見することが難しい
+                情報の特徴を明らかにします。
+            </p>
+
+        </div>
+
+
+        <div class="theme">
+
+            <h3>
+                穴流情報処理モデル
+            </h3>
+
+            <p>
+                穴流インフォメーションテクノロジー独自の
+                情報処理モデルの構築を目指します。
+            </p>
+
+        </div>
+
+
+        <div class="theme">
+
+            <h3>
+                AIと人間の協働
+            </h3>
+
+            <p>
+                AIにすべてを任せるのではなく、
+                人間の判断とAIの解析能力を組み合わせた
+                新しい情報処理のあり方を研究します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究メンバー -->
+
+    <section class="section">
+
+        <h2>
+            研究メンバー
+        </h2>
+
+
+        <div class="member">
+
+            <h3>
+                浜崎 御天
+            </h3>
+
+            <p>
+                工学部 教授・プロジェクト代表
+            </p>
+
+            <p>
+                情報工学・AI・情報処理を専門としています。
+            </p>
+
+        </div>
+
+
+        <div class="member">
+
+            <h3>
+                坂口 誠司
+            </h3>
+
+            <p>
+                工学部 准教授
+            </p>
+
+            <p>
+                情報解析・システム開発を担当しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究上の注意 -->
+
+    <section class="section">
+
+        <h2>
+            研究に関する注意
+        </h2>
+
+        <div class="notice">
+
+            <p>
+                本プロジェクトでは、
+                AIによって生成された情報を
+                そのまま研究結果として扱うことはありません。
+            </p>
+
+            <p>
+                研究成果については、
+                必ず研究者による確認・検証を行っています。
+            </p>
+
+            <p>
+                なお、AIに「穴流インフォメーションテクノロジーとは何か」
+                と質問した場合、回答が安定しないことがあります。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <a href="research.html" class="back-button">
+        研究活動へ戻る
+    </a>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>次世代2段建築プロジェクト｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.research-box {
+    background: #eef3f8;
+    border-left: 5px solid #12345b;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.research-box h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.member {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.member:last-child {
+    border-bottom: none;
+}
+
+.member strong {
+    color: #12345b;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #1d4d7d;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            次世代2段建築プロジェクト
+        </h1>
+
+        <p>
+            NEXT GENERATION TWO-STAGE ARCHITECTURE PROJECT
+        </p>
+
+    </div>
+
+
+    <section class="section">
+
+        <h2>
+            プロジェクト概要
+        </h2>
+
+        <p>
+            次世代2段建築プロジェクトでは、
+            限られた土地や空間を有効活用するための
+            新たな建築方式について研究しています。
+        </p>
+
+        <p>
+            建築物を単純に高層化するのではなく、
+            「上下に分かれた二つの生活空間」という考え方を
+            基本とし、住宅・公共施設・都市空間への応用を目指します。
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>
+            研究テーマ
+        </h2>
+
+
+        <div class="research-box">
+
+            <h3>
+                2段建築構造の設計
+            </h3>
+
+            <p>
+                一つの建築物を上下二層の独立した空間として捉え、
+                居住性・安全性・動線などの観点から
+                新しい建築構造を検討します。
+            </p>
+
+        </div>
+
+
+        <div class="research-box">
+
+            <h3>
+                限られた土地の有効活用
+            </h3>
+
+            <p>
+                都市部などの限られた土地において、
+                水平方向だけではなく垂直方向へ空間を展開することで、
+                より多くの機能を持つ建築物の実現を目指します。
+            </p>
+
+        </div>
+
+
+        <div class="research-box">
+
+            <h3>
+                ゲーム空間における城郭構造の分析
+            </h3>
+
+            <p>
+                本研究では、アプリゲーム
+                「城とドラゴン」に登場する城や防衛施設などの
+                ゲーム内空間にも着目しています。
+            </p>
+
+            <p>
+                ゲーム内における限られたフィールド、
+                建築物の配置、防衛動線などを分析し、
+                現実の建築・都市設計との共通点について考察します。
+            </p>
+
+        </div>
+
+
+        <div class="research-box">
+
+            <h3>
+                ゲームから現実へ
+            </h3>
+
+            <p>
+                デジタル空間における建築・配置・動線の設計思想を
+                現実の建築設計へ応用する可能性について研究します。
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>
+            「城とドラゴン」との関連研究
+        </h2>
+
+        <p>
+            「城とドラゴン」においては、
+            限られた空間の中に城・防衛施設・キャラクターなどを配置し、
+            戦略的な空間を構築する必要があります。
+        </p>
+
+        <p>
+            本プロジェクトでは、このようなゲーム空間における
+            「配置」「高さ」「動線」「防御」という考え方を、
+            建築学的な視点から分析しています。
+        </p>
+
+        <p>
+            なお、本研究におけるゲームの利用は、
+            建築・空間設計に関する研究目的によるものです。
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>
+            研究メンバー
+        </h2>
+
+        <div class="member">
+
+            <strong>
+                土井 和子 教授
+            </strong>
+
+            <p>
+                建築設計・都市空間論
+            </p>
+
+        </div>
+
+
+        <div class="member">
+
+            <strong>
+                建築学部学生研究チーム
+            </strong>
+
+            <p>
+                2段建築の設計・模型制作・
+                デジタル空間分析を担当しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>
+            今後の研究
+        </h2>
+
+        <p>
+            今後は2段建築の実用化に向けた模型制作や
+            コンピューターシミュレーションを行う予定です。
+        </p>
+
+        <p>
+            また、ゲーム空間における建築設計の分析をさらに進め、
+            デジタル空間と現実の建築設計を結びつける
+            新たな研究領域の確立を目指します。
+        </p>
+
+    </section>
+
+
+    <a href="research.html" class="back-button">
+        研究活動へ戻る
+    </a>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
