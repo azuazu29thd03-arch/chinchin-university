@@ -36,6 +36,7 @@ header {
 }
 
 /* 校章＋大学名 */
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -61,6 +62,9 @@ header {
     font-size: 13px;
     font-weight: normal;
 }
+
+
+/* ナビ */
 
 nav {
     background: #0c2745;
@@ -91,6 +95,9 @@ nav a:hover {
     background: #1d4d7d;
 }
 
+
+/* メイン */
+
 .main {
     max-width: 1100px;
     margin: auto;
@@ -111,6 +118,9 @@ nav a:hover {
     color: #777;
 }
 
+
+/* セクション */
+
 .section {
     background: white;
     padding: 40px;
@@ -128,6 +138,9 @@ nav a:hover {
 .section p {
     line-height: 2;
 }
+
+
+/* サークル */
 
 .circle-card {
     border: 1px solid #ddd;
@@ -164,12 +177,107 @@ nav a:hover {
     background: #1d4d7d;
 }
 
+
+/* 大学行事 */
+
+.event-card {
+    border-left: 5px solid #12345b;
+    background: #eef3f8;
+    padding: 25px;
+    margin-bottom: 18px;
+}
+
+.event-card:last-child {
+    margin-bottom: 0;
+}
+
+.event-date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.event-card h3 {
+    color: #12345b;
+    margin: 5px 0 10px;
+    font-size: 21px;
+}
+
+
+/* キャンパス施設 */
+
+.facility-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 18px;
+    background: #fafbfc;
+}
+
+.facility-card:last-child {
+    margin-bottom: 0;
+}
+
+.facility-card h3 {
+    color: #12345b;
+    margin-top: 0;
+    font-size: 21px;
+}
+
+
+/* 学生支援 */
+
+.support-card {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.support-card:first-child {
+    padding-top: 0;
+}
+
+.support-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.support-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* 学生の一日 */
+
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.schedule th {
+    width: 25%;
+    color: #12345b;
+    background: #f5f7fa;
+}
+
+
+/* 注意書き */
+
 .notice {
     background: #eef3f8;
     border-left: 5px solid #12345b;
     padding: 25px;
     line-height: 2;
 }
+
+
+/* フッター */
 
 footer {
     background: #0c2745;
@@ -178,6 +286,9 @@ footer {
     text-align: center;
     font-size: 13px;
 }
+
+
+/* スマホ対応 */
 
 @media (max-width: 700px) {
 
@@ -191,6 +302,15 @@ footer {
         margin-bottom: 15px;
     }
 
+    .school-emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
     nav ul {
         flex-wrap: wrap;
     }
@@ -199,8 +319,39 @@ footer {
         flex-basis: 50%;
     }
 
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title {
+        margin-bottom: 35px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
     .section {
-        padding: 25px;
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .circle-card,
+    .event-card,
+    .facility-card {
+        padding: 20px;
+    }
+
+    .schedule {
+        font-size: 14px;
+    }
+
+    .schedule th,
+    .schedule td {
+        padding: 10px;
     }
 
 }
@@ -211,6 +362,7 @@ footer {
 
 
 <body>
+
 
 <header>
 
@@ -288,6 +440,7 @@ footer {
     </nav>
 
 </header>
+
 
 
 <main class="main">
@@ -444,6 +597,428 @@ footer {
             </p>
 
         </div>
+
+    </section>
+
+
+
+    <!-- 大学行事 -->
+
+    <section class="section">
+
+        <h2>
+            大学行事
+        </h2>
+
+        <p>
+            年間を通じて、学生同士や地域との交流を深める
+            様々な行事を開催しています。
+        </p>
+
+
+        <div class="event-card">
+
+            <div class="event-date">
+                4月
+            </div>
+
+            <h3>
+                入学式
+            </h3>
+
+            <p>
+                新入生を迎え、朕珍大学での新たな学生生活が始まります。
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-date">
+                6月
+            </div>
+
+            <h3>
+                朕珍大学祭「ちんさい」
+            </h3>
+
+            <p>
+                学生による模擬店、研究発表、ステージ企画などが行われる
+                本学最大の学生イベントです。
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-date">
+                10月
+            </div>
+
+            <h3>
+                オープンキャンパス
+            </h3>
+
+            <p>
+                大学の授業や研究、学生生活を実際に体験できる
+                高校生向けのイベントです。
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <div class="event-date">
+                3月
+            </div>
+
+            <h3>
+                卒業式
+            </h3>
+
+            <p>
+                それぞれの学びを終えた学生が、
+                新たな進路へと旅立ちます。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- キャンパス施設 -->
+
+    <section class="section">
+
+        <h2>
+            キャンパス施設
+        </h2>
+
+        <p>
+            学生が快適に学び、交流できる環境を整備しています。
+        </p>
+
+
+        <div class="facility-card">
+
+            <h3>
+    朕珍大学中央図書館
+</h3>
+
+<p>
+    約12万冊の蔵書を備えた本学の中心的な図書館です。
+    静かな学習スペースやグループ学習室も整備されています。
+</p>
+
+<a href="library.html" class="circle-button">
+    図書館詳細
+</a>
+        </div>
+
+
+        <div class="facility-card">
+
+
+
+    <h3>
+        朕珍大学学生食堂
+    </h3>
+
+    <p>
+        学生や教職員が利用できる
+        キャンパス内の学生食堂です。
+    </p>
+
+    <p class="circle-info">
+        営業時間：平日 11:00～14:00、17:00～19:00
+    </p>
+
+    <a
+        href="cafeteria.html"
+        class="circle-button"
+    >
+        学生食堂詳細
+    </a>
+
+</div>            
+       
+
+
+        <div class="facility-card">
+
+
+
+    <h3>
+        学生交流スペース
+    </h3>
+
+    <p>
+        学生同士が自由に交流できるスペースです。
+        授業の合間の休憩やサークル活動にも利用されています。
+    </p>
+
+    <a
+        href="交流スペース.html"
+        class="circle-button"
+    >
+        学生交流スペース詳細
+    </a>
+
+
+        </div>
+
+
+<div class="facility-card">
+
+    <h3>
+        中央体育館
+    </h3>
+
+    <p>
+        体育授業やクラブ・サークル活動、
+        大学行事などに利用されています。
+    </p>
+
+    <a
+        href="gym.html"
+        class="circle-button"
+    >
+        中央体育館詳細
+    </a>
+
+</div>        
+        <div class="facility-card">
+
+    <h3>
+        文学思想交流室
+    </h3>
+
+    <p>
+        文学部の学生を中心に、
+        文学・思想・文化について自由に議論するための施設です。
+    </p>
+
+    <p>
+        なお、議論が終わらず閉館時間を過ぎる学生が
+        毎年一定数確認されています。
+    </p>
+
+    <a
+        href="literature-room.html"
+        class="circle-button"
+    >
+        文学思想交流室詳細
+    </a>
+
+</div>
+        
+
+    </section>
+
+
+
+    <!-- 学生支援 -->
+
+    <section class="section">
+
+        <h2>
+            学生支援
+        </h2>
+
+        <p>
+            学生一人ひとりが安心して大学生活を送れるよう、
+            様々な支援制度を用意しています。
+        </p>
+
+
+        <div class="support-card">
+
+            <h3>
+                履修相談
+            </h3>
+
+            <p>
+                履修登録や授業選択について、
+                学生からの相談を受け付けています。
+            </p>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <h3>
+                キャリア支援
+            </h3>
+
+            <p>
+                就職活動や進学、資格取得など、
+                卒業後の進路について相談することができます。
+            </p>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <h3>
+                学習支援
+            </h3>
+
+            <p>
+                学習方法やレポート作成、
+                試験対策などについて相談できます。
+            </p>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <h3>
+                学生相談室
+            </h3>
+
+            <p>
+                学生生活に関する様々な悩みについて、
+                専門の相談員に相談することができます。
+            </p>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <h3>
+                文学的・哲学的相談
+            </h3>
+
+            <p>
+                「私は何者なのか」「なぜ人は生きるのか」
+                「そもそも大学とは何なのか」などの相談について、
+                文学部教員が対応します。
+            </p>
+
+            <p>
+                ※相談内容によっては、回答まで数週間を要する場合があります。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 学生の一日 -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学生の一日
+        </h2>
+
+        <p>
+            ある学生の一般的な一日を紹介します。
+        </p>
+
+
+        <table class="schedule">
+
+            <tr>
+
+                <th>
+                    08:30
+                </th>
+
+                <td>
+                    登校
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    09:00
+                </th>
+
+                <td>
+                    1限開始
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    12:10
+                </th>
+
+                <td>
+                    学生食堂で昼食
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    13:00
+                </th>
+
+                <td>
+                    午後の授業・研究活動
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    15:00
+                </th>
+
+                <td>
+                    サークル活動
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    17:00
+                </th>
+
+                <td>
+                    自主学習・研究
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    19:00
+                </th>
+
+                <td>
+                    帰宅
+                </td>
+
+            </tr>
+
+        </table>
 
     </section>
 
