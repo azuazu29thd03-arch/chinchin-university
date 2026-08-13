@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>医学部｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+
+/* メイン */
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+
+/* 共通セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+
+/* 医学部長 */
+
+.dean {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.dean img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dean-text {
+    flex: 1;
+}
+
+.dean-text h3 {
+    font-size: 25px;
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* 学科 */
+
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.department {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #fafbfc;
+}
+
+.department h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+
+/* 研究 */
+
+.research-card {
+    border-left: 5px solid #12345b;
+    background: #eef3f8;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.research-card:last-child {
+    margin-bottom: 0;
+}
+
+.research-card h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+
+/* 注意書き */
+
+.notice {
+    background: #fff8df;
+    border: 1px solid #e5d38a;
+    padding: 25px;
+    line-height: 2;
+}
+
+.notice strong {
+    color: #8a6800;
+}
+
+
+/* 病院 */
+
+.hospital {
+    background: #f1f3f5;
+    border-left: 6px solid #12345b;
+    padding: 30px;
+    line-height: 2;
+}
+
+.hospital h3 {
+    color: #12345b;
+}
+
+
+/* 教員 */
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.teacher {
+    background: #fafbfc;
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.teacher h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+.teacher a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 15px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.teacher a:hover {
+    background: #1d4d7d;
+}
+
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .dean {
+        display: block;
+        text-align: center;
+    }
+
+    .dean img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .department-grid,
+    .teacher-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            朕珍大学
+
+            <span>
+                Chinchin University
+            </span>
+
+        </a>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            医学部
+        </h1>
+
+        <p>
+            FACULTY OF MEDICINE
+        </p>
+
+    </div>
+
+
+
+    <!-- 医学部について -->
+
+    <section class="section">
+
+        <h2>
+            医学部について
+        </h2>
+
+        <p>
+            朕珍大学医学部では、医学・生命科学に関する
+            幅広い知識と技術を身につけ、
+            人々の健康と未来を支える医療人を育成しています。
+        </p>
+
+        <p>
+            基礎医学から臨床医学まで体系的に学び、
+            医療現場で必要となる判断力・倫理観・
+            穴を見抜く力を養います。
+        </p>
+
+    </section>
+
+
+
+    <!-- 医学部長 -->
+
+    <section class="section">
+
+        <h2>
+            医学部長
+        </h2>
+
+        <div class="dean">
+
+            <img src="星川.jpg" alt="星川 飛">
+
+            <div class="dean-text">
+
+                <h3>
+                    星川 飛
+                </h3>
+
+                <p>
+                    医学部長
+                </p>
+
+                <p>
+                    専門：泌尿器科学
+                </p>
+
+                <p>
+                    「医学とは、人間の身体を知ることです。
+                    そして時には、身体に存在する
+                    様々な穴について考えることでもあります。」
+                </p>
+
+                <a href="hoshikawa.html">
+                    教員プロフィール
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 学科 -->
+
+    <section class="section">
+
+        <h2>
+            学科・教育分野
+        </h2>
+
+
+        <div class="department-grid">
+
+
+            <div class="department">
+
+                <h3>
+                    医学科
+                </h3>
+
+                <p>
+                    基礎医学・臨床医学を総合的に学び、
+                    医療人として必要な知識と技術を身につけます。
+                </p>
+
+            </div>
+
+
+            <div class="department">
+
+                <h3>
+                    生命医科学科
+                </h3>
+
+                <p>
+                    生命現象を分子・細胞レベルから研究し、
+                    新しい医学の可能性を探究します。
+                </p>
+
+            </div>
+
+
+            <div class="department">
+
+                <h3>
+                    穴科学分野
+                </h3>
+
+                <p>
+                    人体および自然界に存在する「穴」について、
+                    その構造・機能・役割を医学的観点から研究します。
+                </p>
+
+            </div>
+
+
+            <div class="department">
+
+                <h3>
+                    原因不明医学研究分野
+                </h3>
+
+                <p>
+                    現代医学では説明できない現象を対象とし、
+                    「なぜそうなったのか」を考えます。
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 教員 -->
+
+    <section class="section">
+
+        <h2>
+            教員紹介
+        </h2>
+
+
+        <div class="teacher-list">
+
+
+            <div class="teacher">
+
+                <h3>
+                    星川 飛
+                </h3>
+
+                <p>
+                    医学部長・教授
+                </p>
+
+                <p>
+                    専門：泌尿器科学
+                </p>
+
+                <a href="hoshikawa.html">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+            <div class="teacher">
+
+                <h3>
+                    中田 慎二
+                </h3>
+
+                <p>
+                    教授
+                </p>
+
+                <p>
+                    専門：生命科学
+                </p>
+
+                <a href="nakada.html">
+                    プロフィール
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究活動 -->
+
+    <section class="section">
+
+        <h2>
+            研究活動
+        </h2>
+
+
+        <div class="research-card">
+
+            <h3>
+                泌尿器科学研究
+            </h3>
+
+            <p>
+                腎臓・膀胱・尿路などを対象とし、
+                人体の排泄機構について研究しています。
+            </p>
+
+            <p>
+                <strong>
+                    現在の研究テーマ：
+                </strong>
+                「尿意を限界まで我慢した場合、
+                人間は何分まで耐えられるのか」
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                穴と医学の総合研究
+            </h3>
+
+            <p>
+                人体に存在する様々な穴に着目し、
+                その構造・機能・社会的意義について
+                総合的に研究しています。
+            </p>
+
+            <p>
+                <strong>
+                    主な研究対象：
+                </strong>
+                鼻の穴・耳の穴・口・その他、
+                本学が「穴」と認定したもの
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- 附属病院 -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学医学部附属病院
+        </h2>
+
+
+        <div class="hospital">
+
+            <h3>
+                附属病院について
+            </h3>
+
+            <p>
+                朕珍大学医学部附属病院では、
+                地域医療の中核を担う高度な医療を提供しています。
+            </p>
+
+            <p>
+                患者一人ひとりに寄り添い、
+                安全で質の高い医療を目指しています。
+            </p>
+
+            <p>
+                <strong>
+                    診療科：
+                </strong>
+                内科・外科・泌尿器科・
+                穴科・原因不明科
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 学生へのお知らせ -->
+
+    <section class="section">
+
+        <h2>
+            医学部学生へのお知らせ
+        </h2>
+
+
+        <div class="notice">
+
+            <p>
+                <strong>
+                    【重要】白衣着用について
+                </strong>
+            </p>
+
+            <p>
+                医学部生は実習時に白衣を着用してください。
+            </p>
+
+            <p>
+                白衣を忘れた場合は、実習を受けることができません。
+              
+            </p>
+
+            <p>
+                ※割烹着でも可
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 重要事項 -->
+
+    <section class="section">
+
+        <h2>
+            医学部からの重要なお知らせ
+        </h2>
+
+
+        <div class="notice">
+
+            <p>
+                本学医学部では、
+                「穴」という概念について
+                真剣に研究しています。
+            </p>
+
+            <p>
+                穴を見つけた場合は、
+                勝手に入らず、まず担当教員へ報告してください。
+            </p>
+
+            <p style="text-align:right;">
+                朕珍大学医学部
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

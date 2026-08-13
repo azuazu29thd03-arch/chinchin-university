@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>文学部｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ロゴ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: block;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+/* ページタイトル */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+    letter-spacing: 3px;
+}
+
+/* セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+/* 学部長メッセージ */
+
+.message {
+    background: #f1f3f5;
+    padding: 30px;
+    line-height: 2.2;
+    border-left: 5px solid #555;
+}
+
+.message-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 教員 */
+
+.teacher-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fafbfc;
+}
+
+.teacher-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.teacher-link {
+    color: #12345b;
+    text-decoration: none;
+}
+
+.teacher-link:hover {
+    text-decoration: underline;
+}
+
+/* 授業 */
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #fafbfc;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+/* 思想 */
+
+.thought {
+    background: #fff8df;
+    border: 1px solid #e5d38a;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.thought h3 {
+    margin-top: 0;
+}
+
+/* 注意 */
+
+.warning {
+    background: #eeeeee;
+    border-left: 5px solid #333;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* 引用 */
+
+.quote {
+    text-align: center;
+    font-size: 24px;
+    line-height: 2;
+    padding: 30px 10px;
+    font-style: italic;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <a href="index.html" class="logo">
+
+            <img src="校章.jpg" alt="朕珍大学 校章">
+
+            <div class="logo-text">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+<div class="page-title">
+
+    <h1>
+        文学部
+    </h1>
+
+    <p>
+        FACULTY OF LETTERS
+    </p>
+
+</div>
+
+
+
+<!-- 概要 -->
+
+<section class="section">
+
+    <h2>
+        文学部について
+    </h2>
+
+    <p>
+        文学部では、文学・言語・文化・思想などを幅広く学び、
+        人間と社会について深く探究します。
+    </p>
+
+    <p>
+        しかし、本学部が本当に研究しているものが何なのかについては、
+        教員の間でも意見が一致していません。
+    </p>
+
+    <p>
+        そもそも「学ぶ」とは何なのか。
+        「文学」とは何なのか。
+        そして「人間」とは何なのか。
+    </p>
+
+    <p>
+        これらの問いに対して、本学部では答えを出すことを急ぎません。
+    </p>
+
+    <div class="thought">
+
+        <h3>
+            本学部の基本姿勢
+        </h3>
+
+        <p>
+            答えがないのではありません。
+            まだ、答えが決まっていないだけです。
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- 学部長 -->
+
+<section class="section">
+
+    <h2>
+        学部長メッセージ
+    </h2>
+
+
+    <div class="message">
+
+        <div class="message-title">
+            文学部長　佐々木 金三郎
+        </div>
+
+        <p>
+            文学を学ぶということは、
+            本をたくさん読むことではありません。
+        </p>
+
+        <p>
+            本を読むことで、自分が何を考えていたのかを知り、
+            自分が何を考えていなかったのかに気づくことです。
+        </p>
+
+        <p>
+            したがって、本学部では
+            「正しい答え」を教えることを目的としていません。
+        </p>
+
+        <p>
+            むしろ、答えを出したあとに
+            「本当にそれでいいのか」と
+            もう一度考えることを大切にしています。
+        </p>
+
+        <p>
+            文学は役に立つのか、と聞かれることがあります。
+        </p>
+
+        <p>
+            私は、その質問自体が文学的ではないと思っています。
+        </p>
+
+        <p style="text-align:right;">
+            文学部長　佐々木 金三郎
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- 教育内容 -->
+
+<section class="section">
+
+    <h2>
+        教育内容
+    </h2>
+
+    <p>
+        本学部では、文学作品を読むだけではなく、
+        言葉が人間の思考や社会に与える影響について考察します。
+    </p>
+
+    <p>
+        また、既存の価値観を疑い、
+        「当たり前」とされているものを別の角度から捉える力を養います。
+    </p>
+
+    <div class="quote">
+
+        「普通」とは、<br>
+        多数派が長時間考えることをやめた結果である。
+
+    </div>
+
+</section>
+
+
+
+<!-- 授業 -->
+
+<section class="section">
+
+    <h2>
+        主な授業
+    </h2>
+
+
+    <div class="course-list">
+
+
+        <div class="course-card">
+
+            <h3>
+                文学基礎
+            </h3>
+
+            <p>
+                文学とは何かについて考える。
+                なお、授業終了時点でも結論が出ない場合があります。
+            </p>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <h3>
+                言語と思想
+            </h3>
+
+            <p>
+                言葉が思考を作るのか、
+                思考が言葉を作るのかについて考察します。
+            </p>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <h3>
+                沈黙論
+            </h3>
+
+            <p>
+                「何も言わない」という行為が
+                果たして本当に「何もしていない」のかを研究します。
+            </p>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <h3>
+                存在と余白
+            </h3>
+
+            <p>
+                書かれている文章ではなく、
+                書かれていない部分について考えます。
+            </p>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <h3>
+                文章を書かない文学
+            </h3>
+
+            <p>
+                文章を書かずに文学を成立させる可能性を探究します。
+                履修者にはノートの持参を推奨します。
+            </p>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <h3>
+                「なぜ？」研究
+            </h3>
+
+            <p>
+                あらゆる物事に対して「なぜ？」と問い続けます。
+                答えが出た場合は、さらに「なぜ？」と問い直します。
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- 教員 -->
+
+<section class="section">
+
+    <h2>
+        教員紹介
+    </h2>
+
+
+    <div class="teacher-card">
+
+        <h3>
+
+            <a href="sasaki.html" class="teacher-link">
+                佐々木 金三郎
+            </a>
+
+        </h3>
+
+        <p>
+            文学部長・教授
+        </p>
+
+        <p>
+            専門：文学思想・存在論・「そもそも論」
+        </p>
+
+    </div>
+
+
+    <div class="teacher-card">
+
+        <h3>
+
+            <a href="kaneda.html" class="teacher-link">
+                金田 珠子
+            </a>
+
+        </h3>
+
+        <p>
+            教授
+        </p>
+
+        <p>
+            専門：言語文化・現代文学
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- 卒業研究 -->
+
+<section class="section">
+
+    <h2>
+        卒業研究
+    </h2>
+
+    <p>
+        文学部では、学生一人ひとりが自由なテーマを設定し、
+        卒業研究に取り組みます。
+    </p>
+
+    <p>
+        過去には以下のような研究が行われました。
+    </p>
+
+    <ul>
+
+        <li>
+            「『おはよう』は何時まで許されるのか」
+        </li>
+
+        <li>
+            「既読スルーは沈黙なのか」
+        </li>
+
+        <li>
+            「『普通』という言葉について」
+        </li>
+
+        <li>
+            「句読点の位置が人間関係に与える影響」
+        </li>
+
+        <li>
+            「何も書かれていないページは文学作品たり得るか」
+        </li>
+
+        <li>
+            「『了解』と『り』の間に存在する感情」
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- 学生への注意 -->
+
+<section class="section">
+
+    <h2>
+        文学部を志望する皆さんへ
+    </h2>
+
+
+    <div class="warning">
+
+        <p>
+            文学部では、「正解を知りたい」という気持ちを否定しません。
+        </p>
+
+        <p>
+            ただし、正解を知ったあとに
+            「なぜそれが正解なのか」と聞かれる可能性があります。
+        </p>
+
+        <p>
+            また、「それは本当に正解なのか」と聞かれる可能性もあります。
+        </p>
+
+        <p>
+            さらに、「そもそも正解とは何なのか」と聞かれる場合があります。
+        </p>
+
+        <p>
+            それでも学び続けたい方を、
+            本学部は歓迎します。
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- 最後 -->
+
+<section class="section">
+
+    <div class="quote">
+
+        文学とは、<br>
+        答えを見つけることではない。<br>
+        <br>
+        答えを見つけたと思った自分を、<br>
+        もう一度疑うことである。
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
