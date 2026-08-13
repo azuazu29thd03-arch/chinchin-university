@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>学生食堂｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+/* メイン写真 */
+
+.facility-photo {
+    background: white;
+    padding: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.facility-photo img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+/* 情報表 */
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.info-table th {
+    width: 30%;
+    background: #eef3f8;
+    color: #12345b;
+}
+
+/* メニュー */
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background: #eef3f8;
+    padding: 25px;
+    border-left: 5px solid #12345b;
+}
+
+.menu-card h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 食堂の特徴 */
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #fafbfc;
+}
+
+.feature-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+/* お知らせ */
+
+.notice {
+    background: #fff8e8;
+    border-left: 5px solid #d19a00;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* 戻る */
+
+.back-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button a:hover {
+    background: #1d4d7d;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ対応 */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .school-emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .facility-photo {
+        padding: 8px;
+    }
+
+    .facility-photo img {
+        max-height: none;
+    }
+
+    .menu-list,
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info-table th,
+    .info-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .info-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    .info-table td {
+        padding-top: 5px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            学生食堂
+        </h1>
+
+        <p>
+            CAMPUS CAFETERIA
+        </p>
+
+    </div>
+
+
+    <!-- 写真 -->
+
+    <div class="facility-photo">
+
+        <img
+            src="学生食堂.jpg"
+            alt="朕珍大学 学生食堂"
+        >
+
+    </div>
+
+
+    <!-- 概要 -->
+
+    <section class="section">
+
+        <h2>
+            朕珍大学学生食堂について
+        </h2>
+
+        <p>
+            朕珍大学学生食堂は、学生や教職員が
+            手頃な価格で食事を楽しめる
+            キャンパス内の食事施設です。
+        </p>
+
+        <p>
+            授業の合間の昼食はもちろん、
+            放課後の軽食や友人との交流の場としても
+            多くの学生に利用されています。
+        </p>
+
+    </section>
+
+
+    <!-- 利用案内 -->
+
+    <section class="section">
+
+        <h2>
+            利用案内
+        </h2>
+
+        <table class="info-table">
+
+            <tr>
+                <th>
+                    営業時間
+                </th>
+
+                <td>
+                    平日　11:00～14:00<br>
+                    17:00～19:00
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    定休日
+                </th>
+
+                <td>
+                    土曜日・日曜日・祝日
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    利用対象
+                </th>
+
+                <td>
+                    学生・教職員・大学関係者
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    支払い方法
+                </th>
+
+                <td>
+                    現金・学生証決済
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- 人気メニュー -->
+
+    <section class="section">
+
+        <h2>
+            主なメニュー
+        </h2>
+
+        <div class="menu-list">
+
+
+            <div class="menu-card">
+
+                <h3>
+                    日替わり定食
+                </h3>
+
+                <p>
+                    毎日内容が変わる
+                    栄養バランスを考えた定食です。
+                </p>
+
+                <p class="price">
+                    450円
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <h3>
+                    カレーライス
+                </h3>
+
+                <p>
+                    学生食堂の定番メニュー。
+                    大盛りにも対応しています。
+                </p>
+
+                <p class="price">
+                    350円
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <h3>
+                    うどん・そば
+                </h3>
+
+                <p>
+                    手軽に食べられる
+                    人気の麺類メニューです。
+                </p>
+
+                <p class="price">
+                    300円～
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <h3>
+                    学生応援ランチ
+                </h3>
+
+                <p>
+                    学生のために考案された
+                    ボリューム重視のメニューです。
+                </p>
+
+                <p class="price">
+                    400円
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- 食堂の特徴 -->
+
+    <section class="section">
+
+        <h2>
+            食堂の特徴
+        </h2>
+
+        <div class="feature-list">
+
+
+            <div class="feature-card">
+
+                <h3>
+                    リーズナブルな価格
+                </h3>
+
+                <p>
+                    学生が毎日利用しやすいよう、
+                    手頃な価格で食事を提供しています。
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    栄養バランス
+                </h3>
+
+                <p>
+                    主食・主菜・副菜を組み合わせ、
+                    学生の健康を考えたメニューを
+                    用意しています。
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    広々とした座席
+                </h3>
+
+                <p>
+                    一人でも友人同士でも利用できる
+                    様々なタイプの座席を用意しています。
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    学生同士の交流
+                </h3>
+
+                <p>
+                    学部や学年を越えた交流の場としても
+                    利用されています。
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- お知らせ -->
+
+    <section class="section">
+
+        <h2>
+            食堂からのお知らせ
+        </h2>
+
+        <div class="notice">
+
+            <p>
+                混雑する昼休みの時間帯は、
+                譲り合ってご利用ください。
+            </p>
+
+            <p>
+                食事後は次の利用者のために、
+                テーブルをきれいにしてから
+                席をお立ちください。
+            </p>
+
+            <p>
+                大盛りを注文する際は、
+                本当に食べきれるかどうかを
+                よく考えてから注文してください。
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="back-button">
+
+        <a href="studentlife.html">
+            学生生活へ戻る
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
