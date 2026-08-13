@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>大学院｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ロゴ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+/* 大学院紹介 */
+
+.introduction {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    line-height: 2;
+}
+
+.introduction h2 {
+    color: #12345b;
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+}
+
+/* 研究科カード */
+
+.graduate-card {
+    background: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.graduate-card h2 {
+    color: #12345b;
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+.graduate-card p {
+    line-height: 2;
+}
+
+.department {
+    background: #f1f4f7;
+    border-left: 4px solid #12345b;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.department h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+/* 注意書き */
+
+.notice {
+    background: #fff8df;
+    border: 1px solid #e5d38a;
+    padding: 30px;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .introduction,
+    .graduate-card {
+        padding: 25px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="header-top">
+
+<a href="index.html" class="logo">
+
+<img src="校章.jpg" alt="朕珍大学 校章">
+
+<div class="logo-text">
+
+朕珍大学
+
+<span>
+Chinchin University
+</span>
+
+</div>
+
+</a>
+
+<div>
+未来を創る、知の総合大学
+</div>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="about.html">
+大学案内
+</a>
+</li>
+
+<li>
+<a href="faculties.html">
+学部・大学院
+</a>
+</li>
+
+<li>
+<a href="research.html">
+研究活動
+</a>
+</li>
+
+<li>
+<a href="teachers.html">
+教員紹介
+</a>
+</li>
+
+<li>
+<a href="admissions.html">
+入試情報
+</a>
+</li>
+
+<li>
+<a href="studentlife.html">
+学生生活
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<main class="main">
+
+
+<div class="page-title">
+
+<h1>
+大学院
+</h1>
+
+<p>
+GRADUATE SCHOOL
+</p>
+
+</div>
+
+
+<!-- 大学院について -->
+
+<section class="introduction">
+
+<h2>
+朕珍大学大学院について
+</h2>
+
+<p>
+朕珍大学大学院では、学部で身につけた専門知識を基盤として、
+より高度な研究活動に取り組みます。
+</p>
+
+<p>
+各研究科では、学生一人ひとりの研究テーマを尊重し、
+自由な発想に基づいた研究を推進しています。
+</p>
+
+<p>
+なお、本学では研究内容によっては、
+指導教員から長時間にわたる質問を受ける場合があります。
+</p>
+
+</section>
+
+
+<!-- 工学研究科 -->
+
+<section class="graduate-card">
+
+<h2>
+工学研究科
+</h2>
+
+<p>
+情報工学・科学技術・工学分野について、
+高度かつ専門的な研究を行います。
+</p>
+
+<div class="department">
+
+<h3>
+情報工学専攻
+</h3>
+
+<p>
+人工知能、情報システム、コンピュータ技術などを研究します。
+</p>
+
+<p>
+<strong>特殊研究領域：</strong>
+穴流情報学
+</p>
+
+<p>
+未知の「穴」に関する情報構造を解明し、
+情報技術との関連性について研究します。
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 医学研究科 -->
+
+<section class="graduate-card">
+
+<h2>
+医学研究科
+</h2>
+
+<p>
+医学・生命科学に関する高度な研究を行い、
+将来の医療を担う研究者を育成します。
+</p>
+
+<div class="department">
+
+<h3>
+医学専攻
+</h3>
+
+<p>
+基礎医学から臨床医学まで幅広い研究を行います。
+</p>
+
+<p>
+<strong>主な研究領域：</strong>
+泌尿器科学・循環器科学・生命科学
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 建築学研究科 -->
+
+<section class="graduate-card">
+
+<h2>
+建築学研究科
+</h2>
+
+<p>
+建築・都市・空間に関する高度な専門研究を行います。
+</p>
+
+<div class="department">
+
+<h3>
+建築学専攻
+</h3>
+
+<p>
+建築設計、都市計画、構造、環境などについて研究します。
+</p>
+
+<p>
+<strong>研究テーマ例：</strong>
+持続可能な都市設計、公共空間、未来型建築
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 文学研究科 -->
+
+<section class="graduate-card">
+
+<h2>
+文学研究科
+</h2>
+
+<p>
+文学・言語・文化・思想について、
+既存の価値観にとらわれない研究を行います。
+</p>
+
+<div class="department">
+
+<h3>
+文学思想専攻
+</h3>
+
+<p>
+文学作品だけではなく、
+「人間とは何か」「存在とは何か」といった
+根本的な問いについて研究します。
+</p>
+
+<p>
+<strong>主な研究領域：</strong>
+文学思想・言語哲学・存在論・文化論
+</p>
+
+</div>
+
+<div class="notice">
+
+<strong>文学研究科からのお願い</strong>
+
+<p>
+研究室内で「そもそも研究とは何か」という議論を
+始めた場合、終了時刻は保証されません。
+</p>
+
+</div>
+
+</section>
+
+
+<!-- 修了要件 -->
+
+<section class="graduate-card">
+
+<h2>
+修了について
+</h2>
+
+<p>
+所定の単位を修得し、修士論文または博士論文を提出し、
+最終審査に合格することで学位が授与されます。
+</p>
+
+<p>
+ただし、文学研究科においては、
+「論文を完成させたとは何を意味するのか」
+について再検討を求められる場合があります。
+</p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>
+朕珍大学 Chinchin University
+</p>
+
+<p>
+© 2026 Chinchin University. All Rights Reserved.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
