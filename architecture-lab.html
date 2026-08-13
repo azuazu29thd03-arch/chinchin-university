@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>建築計画研究室｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+/* ヘッダー */
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* ナビ */
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+/* メイン */
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+/* セクション */
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    color: #12345b;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+/* 研究室概要 */
+
+.lab-header {
+    background: #12345b;
+    color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.lab-header h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.lab-header p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* 研究テーマ */
+
+.research-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fafbfc;
+}
+
+.research-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+/* 教員 */
+
+.profile {
+    background: #eef3f8;
+    padding: 25px;
+    border-left: 5px solid #12345b;
+}
+
+.profile h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+/* プロジェクト */
+
+.project {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project h3 {
+    color: #12345b;
+}
+
+/* 戻るボタン */
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #1d4d7d;
+}
+
+/* フッター */
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .school-emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .lab-header {
+        padding: 25px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            建築計画研究室
+        </h1>
+
+        <p>
+            ARCHITECTURAL PLANNING LABORATORY
+        </p>
+
+    </div>
+
+
+
+    <!-- 研究室概要 -->
+
+    <section class="section">
+
+        <div class="lab-header">
+
+            <h2>
+                建築計画研究室
+            </h2>
+
+            <p>
+                建築・都市・空間の計画について研究し、
+                人々の暮らしを支える新しい建築のあり方を探究しています。
+            </p>
+
+        </div>
+
+
+        <p>
+            本研究室では、住宅や公共建築、都市空間などを対象として、
+            建築が人々の生活や社会に与える影響について研究しています。
+        </p>
+
+        <p>
+            利用者の行動や地域の特性を分析し、
+            誰もが快適に利用できる空間の計画を目指しています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 研究テーマ -->
+
+    <section class="section">
+
+        <h2>
+            主な研究テーマ
+        </h2>
+
+
+        <div class="research-card">
+
+            <h3>
+                住宅建築の計画
+            </h3>
+
+            <p>
+                現代の生活様式に適した住宅の間取りや
+                空間構成について研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                公共空間のデザイン
+            </h3>
+
+            <p>
+                図書館や学校、公共施設など、
+                多様な人々が利用する建築空間の計画について研究します。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                都市と建築
+            </h3>
+
+            <p>
+                建築単体だけでなく、
+                周辺の街並みや交通、地域コミュニティとの関係を含めた
+                都市空間のあり方を研究します。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                二段建築に関する研究
+            </h3>
+
+            <p>
+                限られた敷地や空間を有効活用するため、
+                建築物を立体的に二段構成とする
+                「二段建築」の計画手法について研究しています。
+            </p>
+
+            <p>
+                構造・動線・採光・安全性などの観点から、
+                二段建築の実用化に向けた研究を進めています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 二段建築 -->
+
+    <section class="section">
+
+        <h2>
+            二段建築研究
+        </h2>
+
+        <p>
+            本研究室では、二段建築を単なる特殊建築ではなく、
+            次世代の都市空間を構成する新たな建築方式として位置づけています。
+        </p>
+
+        <p>
+            特に、土地の高度利用や都市部における空間不足への対応を目的として、
+            二段構成による建築計画の可能性を検討しています。
+        </p>
+
+
+        <div class="project">
+
+            <h3>
+                二段住宅モデル
+            </h3>
+
+            <p>
+                上下二層の生活空間を独立させながら、
+                住民同士の交流も可能とする住宅モデルを研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                二段公共施設モデル
+            </h3>
+
+            <p>
+                限られた敷地に複数の機能を配置するための
+                二段型公共施設について研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                二段建築における動線計画
+            </h3>
+
+            <p>
+                上下の空間を安全かつ効率的に移動するための
+                階段・通路・避難経路について検討しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 教員 -->
+
+    <section class="section">
+
+        <h2>
+            研究室担当教員
+        </h2>
+
+        <div class="profile">
+
+            <h3>
+                土井 和子 教授
+            </h3>
+
+            <p>
+                専門：建築計画・都市空間・公共建築
+            </p>
+
+            <p>
+                建築を「人が生活するための器」と捉え、
+                利用者の行動と空間構成の関係について研究しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究室について -->
+
+    <section class="section">
+
+        <h2>
+            研究室での活動
+        </h2>
+
+        <p>
+            学生は設計演習やフィールドワーク、
+            建築事例の調査などを通して研究を行います。
+        </p>
+
+        <p>
+            また、実際の建築物を訪問し、
+            利用者の視点から空間の使われ方を分析する活動も行っています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 戻る -->
+
+    <section class="section">
+
+        <a href="research.html" class="back-button">
+            研究活動ページへ戻る
+        </a>
+
+        <a href="architecture.html"
+           class="back-button"
+           style="margin-left:10px;">
+            建築学部ページへ戻る
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

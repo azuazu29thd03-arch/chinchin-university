@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>医学研究室｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 25%;
+    color: #12345b;
+    background: #f5f7fa;
+}
+
+.research-card {
+    background: #eef3f8;
+    border-left: 5px solid #12345b;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.research-card h3 {
+    margin-top: 0;
+    color: #12345b;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #1d4d7d;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .info-table th,
+    .info-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            医学研究室
+        </h1>
+
+        <p>
+            MEDICAL RESEARCH LABORATORY
+        </p>
+
+    </div>
+
+
+
+    <!-- 研究室概要 -->
+
+    <section class="section">
+
+        <h2>
+            医学研究室について
+        </h2>
+
+        <p>
+            医学研究室では、医学に関する幅広い研究を行っています。
+        </p>
+
+        <p>
+            基礎医学から臨床医学まで様々な分野を対象とし、
+            人々の健康と医療の発展に貢献することを目指しています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 研究室情報 -->
+
+    <section class="section">
+
+        <h2>
+            研究室情報
+        </h2>
+
+        <table class="info-table">
+
+            <tr>
+
+                <th>
+                    研究室名
+                </th>
+
+                <td>
+                    医学研究室
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    所属
+                </th>
+
+                <td>
+                    朕珍大学 医学部
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    研究室長
+                </th>
+
+                <td>
+                    星川 飛
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    教授
+                </th>
+
+                <td>
+                    中田 慎二
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>
+                    研究分野
+                </th>
+
+                <td>
+                    医学・医学研究・健康科学
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- 研究内容 -->
+
+    <section class="section">
+
+        <h2>
+            主な研究内容
+        </h2>
+
+
+        <div class="research-card">
+
+            <h3>
+                医学研究
+            </h3>
+
+            <p>
+                人体の構造や機能、疾病の発生メカニズムについて研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                健康研究
+            </h3>
+
+            <p>
+                人々が健康な生活を送るために必要な知識や環境について研究しています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                医療研究
+            </h3>
+
+            <p>
+                医療技術の発展や、より良い医療のあり方について研究しています。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 教員 -->
+
+    <section class="section">
+
+        <h2>
+            研究室教員
+        </h2>
+
+        <p>
+            医学研究室では、以下の教員を中心として研究を行っています。
+        </p>
+
+        <div class="research-card">
+
+            <h3>
+                星川 飛
+            </h3>
+
+            <p>
+                医学部長。医学研究室を統括しています。
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                中田 慎二
+            </h3>
+
+            <p>
+                医学研究を専門とする教授。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究室からのメッセージ -->
+
+    <section class="section">
+
+        <h2>
+            研究室からのメッセージ
+        </h2>
+
+        <p>
+            医学は、人間そのものを探究する学問です。
+        </p>
+
+        <p>
+            私たちは、日々の研究を通じて医学の可能性を追求し、
+            新しい知識と医療の未来を切り拓いていきます。
+        </p>
+
+    </section>
+
+
+
+    <a href="research.html" class="back-button">
+        研究活動へ戻る
+    </a>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

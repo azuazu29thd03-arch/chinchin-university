@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>文学研究室｜朕珍大学</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #333;
+    background: #f5f6f8;
+}
+
+header {
+    background: #12345b;
+    color: white;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-emblem {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav {
+    background: #0c2745;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #1d4d7d;
+}
+
+.main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #777;
+}
+
+.section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    border-left: 6px solid #12345b;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 2;
+}
+
+.lab-info {
+    background: #eef3f8;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #12345b;
+}
+
+.lab-info strong {
+    color: #12345b;
+}
+
+.research-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fafbfc;
+}
+
+.research-card h3 {
+    color: #12345b;
+    margin-top: 0;
+}
+
+.keyword {
+    color: #666;
+    font-size: 14px;
+}
+
+.message {
+    background: #f1f1f1;
+    padding: 30px;
+    line-height: 2;
+    font-style: italic;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #12345b;
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #1d4d7d;
+}
+
+footer {
+    background: #0c2745;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header-top {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-area {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .school-emblem {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-basis: 50%;
+    }
+
+    .main {
+        padding: 40px 15px;
+    }
+
+    .page-title {
+        margin-bottom: 35px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .research-card,
+    .lab-info {
+        padding: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="header-top">
+
+        <div class="logo-area">
+
+            <img
+                src="校章.jpg"
+                alt="朕珍大学 校章"
+                class="school-emblem"
+            >
+
+            <a href="index.html" class="logo">
+
+                朕珍大学
+
+                <span>
+                    Chinchin University
+                </span>
+
+            </a>
+
+        </div>
+
+        <div>
+            未来を創る、知の総合大学
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="about.html">
+                    大学案内
+                </a>
+            </li>
+
+            <li>
+                <a href="faculties.html">
+                    学部・大学院
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    研究活動
+                </a>
+            </li>
+
+            <li>
+                <a href="teachers.html">
+                    教員紹介
+                </a>
+            </li>
+
+            <li>
+                <a href="admissions.html">
+                    入試情報
+                </a>
+            </li>
+
+            <li>
+                <a href="studentlife.html">
+                    学生生活
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main">
+
+
+    <div class="page-title">
+
+        <h1>
+            文学研究室
+        </h1>
+
+        <p>
+            LABORATORY OF LITERATURE
+        </p>
+
+    </div>
+
+
+
+    <!-- 研究室概要 -->
+
+    <section class="section">
+
+        <h2>
+            文学研究室について
+        </h2>
+
+        <p>
+            文学研究室では、文学作品を読み解くことを通じて、
+            人間の思想、感情、記憶、そして存在について研究しています。
+        </p>
+
+        <p>
+            小説・詩・評論などの作品を対象としながら、
+            「人間はなぜ物語を必要とするのか」という問いを
+            研究の中心に据えています。
+        </p>
+
+        <div class="lab-info">
+
+            <p>
+                <strong>所属：</strong>
+                朕珍大学 文学部
+            </p>
+
+            <p>
+                <strong>研究分野：</strong>
+                文学・思想・文化
+            </p>
+
+            <p>
+                <strong>研究室名：</strong>
+                文学研究室
+            </p>
+
+            <p>
+                <strong>担当教員：</strong>
+                金田 珠子 教授
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究テーマ -->
+
+    <section class="section">
+
+        <h2>
+            主な研究テーマ
+        </h2>
+
+
+        <div class="research-card">
+
+            <h3>
+                文学と人間
+            </h3>
+
+            <p>
+                文学作品に描かれる「人間らしさ」とは何かを研究します。
+                登場人物の感情や行動、葛藤などを分析し、
+                人間という存在について考察します。
+            </p>
+
+            <p class="keyword">
+                キーワード：人間・感情・存在・物語
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                物語と思想
+            </h3>
+
+            <p>
+                文学作品に含まれる思想や価値観を読み解き、
+                物語が社会や人間の考え方に与える影響について研究します。
+            </p>
+
+            <p class="keyword">
+                キーワード：思想・哲学・価値観・社会
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                文学と記憶
+            </h3>
+
+            <p>
+                人間の記憶が文学作品の中でどのように描かれるのかを研究します。
+                「記憶は本当に過去そのものなのか」という問題についても
+                考察を行っています。
+            </p>
+
+            <p class="keyword">
+                キーワード：記憶・過去・時間・自己
+            </p>
+
+        </div>
+
+
+        <div class="research-card">
+
+            <h3>
+                文学と死
+            </h3>
+
+            <p>
+                文学における「死」の表現を研究し、
+                人間が死をどのように理解し、物語として語ってきたのかを探究します。
+            </p>
+
+            <p class="keyword">
+                キーワード：死・生・宗教・物語
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 研究室の特徴 -->
+
+    <section class="section">
+
+        <h2>
+            研究室の特徴
+        </h2>
+
+        <p>
+            本研究室では、作品を「正しく読む」ことだけを目的としていません。
+        </p>
+
+        <p>
+            一つの文章を読んだときに、
+            なぜそのように感じたのか、
+            なぜその表現が必要だったのか、
+            そして「そもそも読むとは何なのか」まで考察します。
+        </p>
+
+        <p>
+            学生同士で意見を交換し、
+            同じ作品について異なる解釈が生まれることを
+            研究上の重要な成果の一つとして捉えています。
+        </p>
+
+    </section>
+
+
+
+    <!-- 研究室からのメッセージ -->
+
+    <section class="section">
+
+        <h2>
+            研究室からのメッセージ
+        </h2>
+
+        <div class="message">
+
+            <p>
+                文学を学ぶということは、
+                答えを覚えることではありません。
+            </p>
+
+            <p>
+                一つの文章を読み、
+                立ち止まり、
+                「なぜだろう」と考えることです。
+            </p>
+
+            <p>
+                そして、ときには自分自身の考えさえ疑ってみる。
+                その繰り返しの中で、
+                私たちは少しずつ世界の見え方を変えていきます。
+            </p>
+
+            <p>
+                文学に正解はありません。
+            </p>
+
+            <p>
+                ――ただし、考えたことには責任を持ちましょう。
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ちょっとしたネタ -->
+
+    <section class="section">
+
+        <h2>
+            研究室における注意事項
+        </h2>
+
+        <p>
+            ・文学作品を読んでいるうちに時間を忘れることがあります。
+        </p>
+
+        <p>
+            ・議論が盛り上がると、予定していた研究テーマから
+            大幅に脱線する場合があります。
+        </p>
+
+        <p>
+            ・調子に乗っている生徒は剥きます(^▽^)/
+        </p>
+
+        <p>
+            ・人生について考えすぎると、研究室から出られなくなることがあります。
+        </p>
+
+    </section>
+
+
+
+    <section class="section">
+
+        <a href="literature.html" class="back-button">
+            文学部へ戻る
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        朕珍大学 Chinchin University
+    </p>
+
+    <p>
+        © 2026 Chinchin University. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
